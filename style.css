@@ -2,10 +2,40 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #121212;
-    color: white;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
+
 header {
-    background: #ff9800;
+    background: #ff9900;
     padding: 20px;
-    font-size: 24px;
+    color: black;
 }
+
+h1 {
+    font-size: 2.5em;
+}
+
+.btn {
+    background: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.about, .roadmap, .buy {
+    padding: 20px;
+    background: #222;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    background: #ff9900;
+    padding: 10px;
+    color: black;
+}
+
