@@ -41,5 +41,31 @@
         <p><strong>Step 1:</strong> Get a Binance Smart Chain-compatible wallet (e.g., MetaMask, Trust Wallet).</p>
         <p><strong>Step 2:</strong> Buy BNB and swap it for $MBGR on PancakeSwap.</p>
         <p><strong>Step 3:</strong> HODL and enjoy the ride! 🚀</p>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("howToBuyModal");
+    var btn = document.getElementById("howToBuyBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    // Open modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // Close modal when clicking the 'x'
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Close modal when clicking outside content
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});
+</script>
+
+    
     </div>
 </div>
