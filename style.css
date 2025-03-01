@@ -1,3 +1,4 @@
+
 /* General Reset */
 /* Navigation Bar */
 nav {
@@ -140,4 +141,39 @@ ul li {
 
 strong {
     color: #ffcc00;
+}
+/* Navigation thingy */
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background: #1e1e1e;
+    color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+}
+
+.close {
+    color: #ffcc00;
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #fff;
 }
