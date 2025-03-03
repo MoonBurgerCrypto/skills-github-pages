@@ -35,6 +35,10 @@ nav ul li a {
     transition: 0.3s;
 }
 
+nav ul li a.active {
+    background: #ff4500;
+}
+
 nav ul li a:hover {
     background: linear-gradient(to bottom, #ff4500, #ff8c00);
 }
