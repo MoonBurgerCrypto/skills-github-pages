@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Navigation Bar */
+/* Navigation */
 nav {
     background-color: #222;
     padding: 10px 0;
@@ -26,91 +26,91 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-weight: bold;
-    background: linear-gradient(to bottom, #ff8c00, #ff4500);
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: 0.3s;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #ff6600;
 }
 
 nav ul li a.active {
-    background: #ff4500;
+    background-color: #ff3300;
 }
 
-nav ul li a:hover {
-    background: linear-gradient(to bottom, #ff4500, #ff8c00);
-}
-
-/* Page Container */
-.container {
-    width: 80%;
-    max-width: 900px;
-    margin: 20px auto;
+/* Header */
+header {
+    text-align: center;
     padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-bottom: 2px solid #ff6600;
 }
 
-/* Headings */
 h1 {
     color: #222;
-    text-align: center;
 }
 
-h2 {
-    color: #444;
-    border-bottom: 2px solid #ff8c00;
-    padding-bottom: 5px;
+/* Buy Guide */
+.buy-guide {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Steps */
-.step {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    background: #f4f4f4;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.buy-guide h2 {
+    color: #ff3300;
 }
 
-.step strong {
-    color: #ff4500;
+.buy-guide ol {
+    padding-left: 20px;
 }
 
-/* Buttons */
-.button {
-    display: inline-block;
-    padding: 10px 15px;
-    color: white;
-    background: #ff4500;
-    border-radius: 6px;
+.buy-guide li {
+    margin-bottom: 15px;
+}
+
+.buy-guide a {
+    color: #ff6600;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
 }
 
-.button:hover {
-    background: #ff8c00;
+.buy-guide a:hover {
+    text-decoration: underline;
 }
 
 /* FAQ Section */
 .faq {
-    margin-top: 40px;
+    max-width: 800px;
+    margin: 40px auto;
     padding: 20px;
-    background: #eee;
-    border-radius: 8px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .faq h2 {
+    color: #ff3300;
     text-align: center;
 }
 
 .faq-item {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.faq-item strong {
-    color: #ff4500;
+.faq-item h3 {
+    color: #222;
+    background-color: #ff6600;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.faq-item p {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
 }
