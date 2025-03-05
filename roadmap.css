@@ -138,3 +138,9 @@ ul li ul {
 ul li.open ul {
     display: block;
 }
+.roadmap-step {
+    cursor: pointer; /* Makes it clear it's clickable */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color
