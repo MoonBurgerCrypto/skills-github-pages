@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Buy - MoonBurger ($MBGR)</title>
-    <link rel="stylesheet" href="how-to-buy.css">
+    <title>MoonBurger Roadmap</title>
+    <link rel="stylesheet" href="roadmap.css">
     <script>
-        function toggleDetails(id) {
+        function toggleDetails(id, element) {
             var details = document.getElementById(id);
-            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+            var arrow = element.querySelector(".arrow");
+
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                arrow.innerHTML = "▲"; // Change to up arrow
+            } else {
+                details.style.display = "none";
+                arrow.innerHTML = "▼"; // Change to down arrow
+            }
         }
     </script>
 </head>
@@ -30,54 +38,61 @@
     <section>
         <h2>📍 Roadmap</h2>
         <ul>
-            <li><strong onclick="toggleDetails('phase1')" style="cursor:pointer; color:#ffcc00;">Phase 1: Launch & Community Building</strong>
-                <ul id="phase1" style="display:none;">
+            <li onclick="toggleDetails('phase1', this)" class="clickable">
+                <span class="arrow">▼</span> <strong>Phase 1: Launch & Community Building</strong>
+                <ul id="phase1" class="details">
                     <li>Develop and launch website</li>
                     <li>Deploy smart contract on Binance Smart Chain</li>
                     <li>Begin social media marketing</li>
                     <li>Grow Telegram & Twitter community</li>
                 </ul>
             </li>
-            <li><strong onclick="toggleDetails('phase2')" style="cursor:pointer; color:#ffcc00;">Phase 2: Presale & PancakeSwap Listing</strong>
-                <ul id="phase2" style="display:none;">
+            <li onclick="toggleDetails('phase2', this)" class="clickable">
+                <span class="arrow">▼</span> <strong>Phase 2: Presale & PancakeSwap Listing</strong>
+                <ul id="phase2" class="details">
                     <li>Conduct private and public presale</li>
                     <li>Launch $MBGR trading on PancakeSwap</li>
                     <li>Distribute airdrops and community rewards</li>
                 </ul>
             </li>
-            <li><strong onclick="toggleDetails('phase3')" style="cursor:pointer; color:#ffcc00;">Phase 3: Marketing & Partnerships</strong>
-                <ul id="phase3" style="display:none;">
+            <li onclick="toggleDetails('phase3', this)" class="clickable">
+                <span class="arrow">▼</span> <strong>Phase 3: Marketing & Partnerships</strong>
+                <ul id="phase3" class="details">
                     <li>Increase influencer collaborations</li>
                     <li>Launch paid ad campaigns</li>
                     <li>Strategic partnerships with crypto communities</li>
                     <li>Begin NFT concept development</li>
                 </ul>
             </li>
-            <li><strong onclick="toggleDetails('phase4')" style="cursor:pointer; color:#ffcc00;">Phase 4: Major Exchange Listings & Utility Expansion</strong>
-                <ul id="phase4" style="display:none;">
+            <li onclick="toggleDetails('phase4', this)" class="clickable">
+                <span class="arrow">▼</span> <strong>Phase 4: Major Exchange Listings & Utility Expansion</strong>
+                <ul id="phase4" class="details">
                     <li>Apply for CoinGecko & CoinMarketCap listings</li>
                     <li>Secure centralized exchange (CEX) listings</li>
                     <li>Develop $MBGR staking or yield farming options</li>
                     <li>Launch first NFT collection</li>
                 </ul>
             </li>
-            <li><strong onclick="toggleDetails('phase5')" style="cursor:pointer; color:#ffcc00;">Phase 5: The Future of MoonBurger</strong>
-                <ul id="phase5" style="display:none;">
+            <li onclick="toggleDetails('phase5', this)" class="clickable">
+                <span class="arrow">▼</span> <strong>Phase 5: The Future of MoonBurger</strong>
+                <ul id="phase5" class="details">
                     <li>Expand to additional blockchains (Ethereum, Solana)</li>
                     <li>Launch MoonBurger merchandise</li>
                     <li>Host community events & giveaways</li>
                     <li>Continue scaling and improving the ecosystem</li>
                 </ul>
             </li>
-            <li><strong onclick="toggleDetails('phase6')" style="cursor:pointer; color:#ffcc00;">Phase 6: Yield Farming & Staking</strong>
-                <ul id="phase6" style="display:none;">
+            <li onclick="toggleDetails('phase6', this)" class="clickable">
+                <span class="arrow">▼</span> <strong>Phase 6: Yield Farming & Staking</strong>
+                <ul id="phase6" class="details">
                     <li>Introduce $MBGR staking rewards</li>
                     <li>Launch liquidity farming on PancakeSwap</li>
                     <li>Develop governance model for token holders</li>
                 </ul>
             </li>
-            <li><strong onclick="toggleDetails('phase7')" style="cursor:pointer; color:#ffcc00;">Phase 7: MoonBurger DAO & Future Innovations</strong>
-                <ul id="phase7" style="display:none;">
+            <li onclick="toggleDetails('phase7', this)" class="clickable">
+                <span class="arrow">▼</span> <strong>Phase 7: MoonBurger DAO & Future Innovations</strong>
+                <ul id="phase7" class="details">
                     <li>Establish MoonBurger DAO for decentralized governance</li>
                     <li>Introduce new DeFi utilities for $MBGR</li>
                     <li>Explore real-world use cases and partnerships</li>
