@@ -101,3 +101,40 @@ ul ul li {
     padding: 5px 0;
     color: #ccc;
 }
+/* Style for the roadmap list */
+ul li {
+    position: relative;
+    padding: 10px;
+    margin: 5px 0;
+    background: #2a2a2a;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Add an arrow icon to each roadmap phase */
+ul li strong::after {
+    content: " ▼"; /* Downward arrow */
+    font-size: 14px;
+    color: #ffcc00;
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when details are expanded */
+ul li.open strong::after {
+    transform: rotate(180deg); /* Points upwards when expanded */
+}
+
+/* Hide the inner list by default */
+ul li ul {
+    display: none;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+/* Style for expanded roadmap details */
+ul li.open ul {
+    display: block;
+}
