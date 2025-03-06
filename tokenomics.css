@@ -46,6 +46,7 @@ nav ul li a:hover {
     transform: translateY(-3px);
     color: #fff;
 }
+
 header {
     margin: 20px 0;
 }
@@ -75,7 +76,18 @@ h1 {
     width: 140px;
     text-transform: uppercase;
     border: 2px solid #ffcc00;
+    transition: all 0.3s ease-in-out;
 }
+
+.fee-box:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+    transform: translateY(-3px);
+    color: #fff;
+    width: 144px;  /* Increase the width by 4px */
+    height: auto;  /* Keep the height auto-adjusted */
+}
+
 .fee-box a:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
