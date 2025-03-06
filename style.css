@@ -43,6 +43,7 @@ h1 {
 
 .fee-breakdown {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     margin-top: 15px;
@@ -53,7 +54,9 @@ h1 {
     padding: 15px;
     border-radius: 10px;
     font-weight: bold;
-    width: 120px;
+    width: 140px;
+    text-transform: uppercase;
+    border: 2px solid #ffcc00;
 }
 
 .supply {
