@@ -1,47 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoonBurger Tokenomics</title>
-    <link rel="stylesheet" href="tokenomics.css">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="how-to-buy.html">How to Buy</a></li>
-            <li><a href="tokenomics.html" class="active">Tokenomics</a></li>
-        </ul>
-    </nav>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-    <header>
-        <h1>🍔 MoonBurger Tokenomics</h1>
-        <p>Understanding the mechanics behind $MBGR</p>
-    </header>
+nav {
+    background-color: #ffcc00;
+    padding: 10px 0;
+}
 
-    <section class="token-details">
-        <h2>📊 Transaction Fees: <span>4.5%</span></h2>
-        <p>Every transaction contributes to the MoonBurger ecosystem.</p>
-        <div class="fee-breakdown">
-            <div class="fee-box">🔥 1% Buy & Burn</div>
-            <div class="fee-box">💧 1.5% Liquidity</div>
-            <div class="fee-box">📣 1% Marketing</div>
-            <div class="fee-box">⚙️ 0.5% Development</div>
-            <div class="fee-box">👥 0.5% Community Fund</div>
-        </div>
-    </section>
+nav ul {
+    list-style: none;
+    padding: 0;
+}
 
-    <section class="supply">
-        <h2>🚀 Total Supply: <span>1,000,000,000 $MBGR</span></h2>
-        <ul>
-            <li>🔐 <strong>40%</strong> Locked Liquidity</li>
-            <li>🎁 <strong>10%</strong> Airdrops & Rewards</li>
-            <li>📈 <strong>30%</strong> Community & Marketing</li>
-            <li>⚙️ <strong>10%</strong> Development Fund</li>
-            <li>🛠️ <strong>10%</strong> Reserve Fund</li>
-        </ul>
-    </section>
-</body>
-</html>
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.token-details h2 {
+    color: #ffcc00;
+    font-size: 1.8em;
+}
+
+.fee-breakdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.fee-box {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 140px;
+    text-transform: uppercase;
+    border: 2px solid #ffcc00;
+}
+
+.supply {
+    margin-top: 40px;
+}
+
+.supply ul {
+    list-style: none;
+    padding: 0;
+}
+
+.supply li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
