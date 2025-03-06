@@ -1,6 +1,3 @@
-
-/* General Reset */
-/* Navigation Bar */
 nav {
     background: #1e1e1e;
     padding: 15px;
@@ -21,7 +18,6 @@ nav ul li {
     display: inline;
 }
 
-/* Widget-style navigation buttons */
 nav ul li a {
     text-decoration: none;
     color: #121212;
