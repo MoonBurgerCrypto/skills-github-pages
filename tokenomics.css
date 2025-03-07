@@ -29,7 +29,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #121212;
+    color: #fff; /* Changed from #121212 to #fff */
     font-size: 18px;
     font-weight: bold;
     padding: 15px 20px;
@@ -82,18 +82,11 @@ h1 {
 .fee-box:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
-    transform: translateY(-3px);
+    transform: scale(1.05); /* Smoother hover effect */
     color: #fff;
-    width: 144px;  /* Increase the width by 4px */
-    height: auto;  /* Keep the height auto-adjusted */
 }
 
-.fee-box a:hover {
-    background: linear-gradient(135deg, #ff6600, #ffcc00);
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
-    transform: translateY(-3px);
-    color: #fff;
-}
+/* Removed unnecessary .fee-box a:hover */
 
 .supply {
     margin-top: 40px;
@@ -108,81 +101,66 @@ h1 {
     font-size: 1.2em;
     margin: 10px 0;
 }
-/* FAQ Section */
 .faq {
-    max-width: 800px;
-    margin: 40px auto;
+    margin-top: 50px;
     padding: 20px;
-    background-color: #1a1a1a; /* Dark theme background */
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.3);
-    color: #fff; /* White text */
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .faq h2 {
-    text-align: center;
-    font-size: 28px;
-    color: #ffcc00; /* Gold color */
+    color: #ffcc00;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-/* FAQ Item */
 .faq-item {
-    margin-bottom: 10px;
-    border: 1px solid #ffcc00;
-    border-radius: 8px;
-    overflow: hidden;
+    margin-bottom: 15px;
 }
 
-/* FAQ Question */
 .faq-question {
-    width: 100%;
-    background: #333;
-    color: #ffcc00;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: left;
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    color: #121212;
     border: none;
-    outline: none;
+    padding: 12px 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background 0.3s;
 }
 
 .faq-question:hover {
-    background: #444;
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+    transform: translateY(-2px);
 }
 
-/* FAQ Answer */
 .faq-answer {
     display: none;
-    background: #222;
+    background-color: #222;
     color: #fff;
     padding: 15px;
-    font-size: 16px;
-    border-top: 1px solid #ffcc00;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+    transition: all 0.3s ease-in-out;
 }
 
-/* Arrow Icon */
-.faq-question::after {
-    content: "▼"; /* Downward arrow */
-    font-size: 14px;
-    transition: transform 0.3s;
-}
-
-.faq-item.open .faq-question::after {
-    transform: rotate(180deg); /* Flips arrow when open */
-}
-
-/* List inside FAQ */
 .faq-answer ul {
-    margin-top: 10px;
     padding-left: 20px;
 }
 
-.faq-answer li {
-    margin-bottom: 8px;
+.faq-answer ul li {
+    list-style-type: "🔥 ";
 }
