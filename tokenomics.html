@@ -1,74 +1,124 @@
-<section class="faq">
-    <h2>📢 Tokenomics FAQ</h2>
-    
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ('faq1')">❓ What is the total supply of $MBGR? ▼</button>
-        <div class="faq-answer" id="faq1">
-            🚀 The total supply of **MoonBurger ($MBGR)** is **1,000,000,000 tokens** (1 billion).
-        </div>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonBurger Tokenomics</title>
+    <link rel="stylesheet" href="tokenomics.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+        </ul>
+    </nav>
 
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ('faq2')">❓ What are the transaction fees? ▼</button>
-        <div class="faq-answer" id="faq2">
-            💰 Every transaction has a **4.5% fee**, which is split as follows:
-            <ul>
-                <li>🏦 **2% Liquidity Fee** (Added to the liquidity pool for stability)</li>
-                <li>🔥 **1.5% Buy & Burn** (Removes tokens from supply)</li>
-                <li>🛠️ **0.5% Development Fund** (Funds new features & improvements)</li>
-                <li>🎁 **0.5% Community Rewards** (Airdrops, giveaways & incentives)</li>
-            </ul>
-        </div>
-    </div>
+    <header>
+        <h1>🍔 MoonBurger Tokenomics</h1>
+        <p>Understanding the mechanics behind $MBGR</p>
+    </header>
 
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ('faq3')">❓ What does “Buy & Burn” mean? ▼</button>
-        <div class="faq-answer" id="faq3">
-            🔥 The **Buy & Burn** mechanism takes a portion of transaction fees to **buy back $MBGR** and **permanently burn it**. This reduces supply, making the token more scarce and potentially more valuable.
+    <section class="token-details">
+        <h2>📊 Transaction Fees: <span>4.5%</span></h2>
+        <p>What does the transaction fee contribute to?</p>
+        <div class="fee-breakdown">
+            <div class="fee-box">🔥 0.5% Buy and Burn</div>
+            <div class="fee-box">💧 1.5% Liquidity</div>
+            <div class="fee-box">📣 1% Marketing</div>
+            <div class="fee-box">⚙️ 1% Development</div>
+            <div class="fee-box">👨‍💻 0.5% Team</div>
         </div>
-    </div>
+    </section>
 
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ('faq4')">❓ What is the Liquidity Fee? ▼</button>
-        <div class="faq-answer" id="faq4">
-            🏦 The **Liquidity Fee** adds funds to the liquidity pool on PancakeSwap, ensuring smooth trading and preventing huge price swings.
+    <section class="supply">
+        <h2>🚀 Total Supply: <span>1,000,000,000 $MBGR</span></h2>
+        <ul>
+            <li>🔐 <strong>47%</strong> Locked Liquidity</li>
+            <li>🎁 <strong>8%</strong> Airdrops & Rewards</li>
+            <li>📈 <strong>15%</strong> Community & Marketing</li>
+            <li>👨‍💻 <strong>12%</strong> Development Fund</li>
+            <li>🛠️ <strong>5%</strong> Reserve Fund</li>
+        </ul>
+    </section>
+
+    <section class="faq">
+        <h2>📢 Tokenomics FAQ</h2>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ('faq1')">❓ What is the total supply of $MBGR?</button>
+            <div class="faq-answer" id="faq1">
+                🚀 The total supply of **MoonBurger ($MBGR)** is **1,000,000,000 tokens** (1 billion).
+            </div>
         </div>
-    </div>
 
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ('faq5')">❓ What is the Development Fund used for? ▼</button>
-        <div class="faq-answer" id="faq5">
-            🛠️ The **Development Fund** supports ongoing improvements, including:
-            <ul>
-                <li>New features & upgrades</li>
-                <li>Marketing & partnerships</li>
-                <li>Community events & rewards</li>
-            </ul>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ('faq2')">❓ What are the transaction fees?</button>
+            <div class="faq-answer" id="faq2">
+                💰 Every transaction has a **4.5% fee**, which is split as follows:
+                <ul>
+                    <li>🏦 **1.5% Liquidity Fee** (Added to the liquidity pool for stability)</li>
+                    <li>🔥 **0.5% Buy & Burn** (Removes tokens from supply)</li>
+                    <li>🛠️ **1% Development Fund** (Funds new features & improvements)</li>
+                    <li>📢 **1% Marketing & Partnerships**</li>
+                    <li>👨‍💻 **0.5% Team Allocation**</li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ('faq6')">❓ What happens if all tokens are burned? ▼</button>
-        <div class="faq-answer" id="faq6">
-            🔥 If all tokens were burned (which won’t happen), **no one would have any $MBGR left to trade!** That’s why burning is controlled and gradual, keeping enough tokens in circulation for the project to grow.
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ('faq3')">❓ What does “Buy & Burn” mean?</button>
+            <div class="faq-answer" id="faq3">
+                🔥 The **Buy & Burn** mechanism takes a portion of transaction fees to **buy back $MBGR** and **permanently burn it**. This reduces supply, making the token more scarce and potentially more valuable.
+            </div>
         </div>
-    </div>
 
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ('faq7')">❓ Where can I track the token supply? ▼</button>
-        <div class="faq-answer" id="faq7">
-            📊 You can track $MBGR on:
-            <ul>
-                <li>🔍 **BscScan** (for token contract details)</li>
-                <li>📈 **CoinGecko & CoinMarketCap** (once listed)</li>
-            </ul>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ('faq4')">❓ What is the Liquidity Fee?</button>
+            <div class="faq-answer" id="faq4">
+                🏦 The **Liquidity Fee** adds funds to the liquidity pool on PancakeSwap, ensuring smooth trading and preventing huge price swings.
+            </div>
         </div>
-    </div>
-</section>
 
-<script>
-    function toggleFAQ(id) {
-        var answer = document.getElementById(id);
-        answer.style.display = (answer.style.display === "block") ? "none" : "block";
-    }
-</script>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ('faq5')">❓ What is the Development Fund used for?</button>
+            <div class="faq-answer" id="faq5">
+                🛠️ The **Development Fund** supports ongoing improvements, including:
+                <ul>
+                    <li>New features & upgrades</li>
+                    <li>Marketing & partnerships</li>
+                    <li>Community events & rewards</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ('faq6')">❓ What happens if all tokens are burned?</button>
+            <div class="faq-answer" id="faq6">
+                🔥 If all tokens were burned (which won’t happen), **no one would have any $MBGR left to trade!** That’s why burning is controlled and gradual, keeping enough tokens in circulation for the project to grow.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ('faq7')">❓ Where can I track the token supply?</button>
+            <div class="faq-answer" id="faq7">
+                📊 You can track $MBGR on:
+                <ul>
+                    <li>🔍 **BscScan** (for token contract details)</li>
+                    <li>📈 **CoinGecko & CoinMarketCap** (once listed)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleFAQ(id) {
+            var answer = document.getElementById(id);
+            answer.classList.toggle("open");
+        }
+    </script>
+
+</body>
+</html>
