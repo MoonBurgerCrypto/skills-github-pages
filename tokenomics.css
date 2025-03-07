@@ -164,3 +164,6 @@ h1 {
 .faq-answer ul li {
     list-style-type: "🔥 ";
 }
+.faq-answer.open {
+    display: block; /* This makes the answer visible when .open is added */
+}
