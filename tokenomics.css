@@ -1,3 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    background: #1e1e1e;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #121212;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    box-shadow: 3px 3px 10px rgba(255, 204, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+header {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.token-details h2 {
+    color: #ffcc00;
+    font-size: 1.8em;
+}
+
+.fee-breakdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.fee-box {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 140px;
+    text-transform: uppercase;
+    border: 2px solid #ffcc00;
+    transition: all 0.3s ease-in-out;
+}
+
+.fee-box:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+    transform: translateY(-3px);
+    color: #fff;
+    width: 144px;  /* Increase the width by 4px */
+    height: auto;  /* Keep the height auto-adjusted */
+}
+
+.fee-box a:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+.supply {
+    margin-top: 40px;
+}
+
+.supply ul {
+    list-style: none;
+    padding: 0;
+}
+
+.supply li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
 /* FAQ Section */
 .faq {
     max-width: 800px;
