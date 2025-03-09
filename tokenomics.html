@@ -44,74 +44,128 @@
         </ul>
     </section>
 
-    <section class="faq">
-        <h2>📢 Tokenomics FAQ</h2>
+<section class="faq">
+    <h2>📢 Tokenomics FAQ</h2>
 
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ('faq1')">❓ What is the total supply of $MBGR?</button>
-            <div class="faq-answer" id="faq1">
-                🚀 The total supply of **MoonBurger ($MBGR)** is **1,000,000,000 tokens** (1 billion).
-            </div>
+    <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ('faq1')">❓ What is MoonBurger? ▼</button>
+        <div class="faq-answer" id="faq1">
+            🍔 MoonBurger ($MBGR) is a community-driven meme token designed for fun, engagement, and DeFi utility. It combines rewards, burns, and liquidity to create a unique ecosystem.
         </div>
+    </div>
 
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ('faq2')">❓ What are the transaction fees?</button>
-            <div class="faq-answer" id="faq2">
-                💰 Every transaction has a **4.5% fee**, which is split as follows:
-                <ul>
-                    <li>🏦 **1.5% Liquidity Fee** (Added to the liquidity pool for stability)</li>
-                    <li>🔥 **0.5% Buy & Burn** (Removes tokens from supply)</li>
-                    <li>🛠️ **1% Development Fund** (Funds new features & improvements)</li>
-                    <li>📢 **1% Marketing & Partnerships**</li>
-                    <li>👨‍💻 **0.5% Team Allocation**</li>
-                </ul>
-            </div>
+    <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ('faq2')">❓ How do I buy MoonBurger? ▼</button>
+        <div class="faq-answer" id="faq2">
+            💰 You can buy $MBGR on PancakeSwap using BNB. Connect your wallet, import the contract, set slippage to 5-6%, and confirm the trade.
         </div>
+    </div>
 
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ('faq3')">❓ What does “Buy & Burn” mean?</button>
-            <div class="faq-answer" id="faq3">
-                🔥 The **Buy & Burn** mechanism takes a portion of transaction fees to **buy back $MBGR** and **permanently burn it**. This reduces supply, making the token more scarce and potentially more valuable.
-            </div>
+    <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ('faq3')">❓ What is the total supply of $MBGR? ▼</button>
+        <div class="faq-answer" id="faq3">
+            🚀 The total supply of MoonBurger is **1,000,000,000 tokens**. A portion is locked for liquidity, development, and community rewards.
         </div>
+    </div>
 
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ('faq4')">❓ What is the Liquidity Fee?</button>
-            <div class="faq-answer" id="faq4">
-                🏦 The **Liquidity Fee** adds funds to the liquidity pool on PancakeSwap, ensuring smooth trading and preventing huge price swings.
-            </div>
+    <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ('faq4')">❓ Are there any transaction fees? ▼</button>
+        <div class="faq-answer" id="faq4">
+            🔄 Yes, every transaction has a **4.5% fee**, which helps fund liquidity, marketing, development, and token burning.
         </div>
+    </div>
 
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ('faq5')">❓ What is the Development Fund used for?</button>
-            <div class="faq-answer" id="faq5">
-                🛠️ The **Development Fund** supports ongoing improvements, including:
-                <ul>
-                    <li>New features & upgrades</li>
-                    <li>Marketing & partnerships</li>
-                    <li>Community events & rewards</li>
-                </ul>
-            </div>
+    <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ('faq5')">❓ Is MoonBurger safe? ▼</button>
+        <div class="faq-answer" id="faq5">
+            🔒 Yes! MoonBurger has **locked liquidity, transparent tokenomics, and an active team**. Always DYOR before investing.
         </div>
+    </div>
 
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ('faq6')">❓ What happens if all tokens are burned?</button>
-            <div class="faq-answer" id="faq6">
-                🔥 If all tokens were burned (which won’t happen), **no one would have any $MBGR left to trade!** That’s why burning is controlled and gradual, keeping enough tokens in circulation for the project to grow.
-            </div>
+    <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ('faq6')">❓ Will MoonBurger offer staking or rewards? ▼</button>
+        <div class="faq-answer" id="faq6">
+            🎁 Yes! Future plans include **staking, yield farming, and exclusive NFT rewards** for holders.
         </div>
+    </div>
 
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ('faq7')">❓ Where can I track the token supply?</button>
-            <div class="faq-answer" id="faq7">
-                📊 You can track $MBGR on:
-                <ul>
-                    <li>🔍 **BscScan** (for token contract details)</li>
-                    <li>📈 **CoinGecko & CoinMarketCap** (once listed)</li>
-                </ul>
-            </div>
+    <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ('faq7')">❓ Where can I track the token supply? ▼</button>
+        <div class="faq-answer" id="faq7">
+            📊 You can track $MBGR on **BscScan, CoinGecko, and CoinMarketCap** once listed.
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+    function toggleFAQ(id) {
+        var answer = document.getElementById(id);
+        answer.classList.toggle("open");
+    }
+</script>
+
+<style>
+    .faq {
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .faq h2 {
+        color: #ffcc00;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .faq-item {
+        margin-bottom: 15px;
+    }
+
+    .faq-question {
+        background: linear-gradient(135deg, #ffcc00, #ff6600);
+        color: #121212;
+        border: none;
+        padding: 12px 18px;
+        width: 100%;
+        text-align: left;
+        font-size: 1.2em;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .faq-question:hover {
+        background: linear-gradient(135deg, #ff6600, #ffcc00);
+        box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+        transform: translateY(-2px);
+    }
+
+    .faq-answer {
+        display: none;
+        background-color: #222;
+        color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 5px;
+        font-size: 1em;
+        box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .faq-answer.open {
+        display: block;
+    }
+</style>
+
 
     <script>
         function toggleFAQ(id) {
