@@ -116,6 +116,7 @@ h1 {
     color: #ffcc00;
     font-size: 2em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .faq-item {
@@ -137,6 +138,17 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.faq-question::after {
+    content: "▼"; /* Default down arrow */
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-question.open::after {
+    transform: rotate(180deg); /* Rotates arrow when active */
 }
 
 .faq-question:hover {
@@ -157,14 +169,6 @@ h1 {
     transition: all 0.3s ease-in-out;
 }
 
-.faq-answer ul {
-    padding-left: 20px;
-}
-
-.faq-answer ul li {
-    list-style-type: "🔥 ";
-}
-
 .faq-answer.open {
-    display: block; /* This makes the answer visible when .open is added */
+    display: block;
 }
