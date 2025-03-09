@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoonBurger Tokenomics</title>
     <link rel="stylesheet" href="tokenomics.css">
+        <script>
+        function toggleDetails(id, element) {
+            var details = document.getElementById(id);
+            var arrow = element.querySelector(".arrow");
+
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                arrow.innerHTML = "▲"; // Change to up arrow
+            } else {
+                details.style.display = "none";
+                arrow.innerHTML = "▼"; // Change to down arrow
+            }
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -105,14 +119,7 @@
         </div>
     </section>
 
-    <script>
-        document.querySelectorAll(".faq-question").forEach(button => {
-            button.addEventListener("click", () => {
-                const answer = button.nextElementSibling;
-                answer.classList.toggle("open");
-            });
-        });
-    </script>
+  
 
 </body>
 </html>
