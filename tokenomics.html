@@ -173,6 +173,15 @@
             answer.classList.toggle("open");
         }
     </script>
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+        answer.classList.toggle("open");
+        button.classList.toggle("open");
+    });
+});
+</script>
 
 </body>
 </html>
