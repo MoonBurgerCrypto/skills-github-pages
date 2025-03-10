@@ -3,53 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Buy - MoonBurger ($MBGR)</title>
-    <link rel="stylesheet" href="how-to-buy.css">
+    <title>MoonBurgerCrypto - The Juiciest Meme Coin</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #111; color: #fff; padding: 20px; }
+        h1, h2, h3 { color: #ffcc00; }
+        .container { max-width: 800px; margin: auto; }
+        .button { background-color: #ffcc00; color: #111; padding: 10px 20px; margin: 10px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; }
+        .faq { text-align: left; margin-top: 30px; }
+        .faq h2 { text-align: center; }
+        .modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8); }
+        .modal-content { background-color: #222; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 50%; color: white; text-align: center; }
+        .close { color: #ffcc00; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
+        .socials { margin-top: 40px; }
+    </style>
 </head>
 <body>
     <nav>
         <ul>
-         <li><a href="index.html">Home</a></li>
-            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" id="howToBuyBtn">How to Buy</a></li>
             <li><a href="tokenomics.html">Tokenomics</a></li>
             <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="whitepaper.html">Whitepaper</a></li>
         </ul>
     </nav>
     
     <header>
-        <h1>🛒 How to Buy $MBGR</h1>
-        <p>Follow these steps to get your hands on MoonBurger ($MBGR)!</p>
+        <h1>🚀 Welcome to MoonBurgerCrypto! 🍔</h1>
+        <p>The tastiest meme coin on Binance Smart Chain.</p>
+        <p>MoonBurger is more than just a cryptocurrency – it’s a movement built around community, fun, and financial opportunities.</p>
+        <p>Join the hottest meme coin in the universe and be part of the MoonBurger revolution!</p>
+        <a href="#" class="button">Buy $MBGR</a>
     </header>
     
     <section>
-        <h2>Step-by-Step Guide</h2>
-        <ol>
-            <li><strong>Step 1:</strong> Set up a Binance Smart Chain-compatible wallet (e.g., MetaMask, Trust Wallet).</li>
-            <li><strong>Step 2:</strong> Purchase Binance Coin (BNB) from an exchange.</li>
-           <li><strong>Step 3:</strong> Go to <a href="https://pancakeswap.finance/" target="_blank" style="color: gold;">PancakeSwap</a> and connect your wallet.</li>
+        <h2>Why Choose MoonBurger?</h2>
+        <p>✔️ Deflationary Supply – Every transaction helps reduce supply, increasing scarcity.</p>
+        <p>✔️ Community-Driven – The holders influence the future of MoonBurger.</p>
+        <p>✔️ Meme-Powered Growth – A strong meme culture fuels organic adoption.</p>
+        <p>✔️ Future Developments – Upcoming NFT collection, staking, and exclusive community perks.</p>
+    </section>
+    
+    <section class="faq">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <h3>What is MoonBurgerCrypto (MBGR)?</h3>
+        <p>MoonBurgerCrypto is a community-driven meme coin with deflationary mechanics, rewarding holders and reducing supply over time.</p>
+        
+        <h3>How can I buy MBGR?</h3>
+        <p>You can purchase MBGR on decentralized exchanges (DEXs) by swapping BNB. <a href="how-to-buy.html" style="color: gold;">Learn more here.</a></p>
+        
+        <h3>Is there a transaction tax?</h3>
+        <p>Yes, MBGR includes a small transaction tax to fund liquidity, marketing, and burns.</p>
+        
+        <h3>What are the future plans for MBGR?</h3>
+        <p>Our roadmap includes presale rounds, exchange listings, strategic partnerships, NFT collections, and community governance features.</p>
+        
+        <h3>Where can I stay updated?</h3>
+        <p>Follow us on social media, join our community on Telegram and Discord, and check our website for regular updates!</p>
+    </section>
 
-            <li><strong>Step 4:</strong> Enter our contract address to swap BNB for $MBGR.</li>
-            <li><strong>Step 5:</strong> Confirm the transaction in your wallet and hold your $MBGR!</li>
-            <li><strong>Step 6:</strong> Add $MBGR to your wallet by manually entering the contract address.</li>
-        </ol>
+    <!-- Socials Section -->
+    <section class="socials">
+        <h2>Follow Us on Social Media</h2>
+        <a href="https://x.com/Moon_Burger22" target="_blank">
+            <img src="twitter-logo.png" alt="Twitter Logo" width="50">
+        </a>
+        <p><a href="https://x.com/Moon_Burger22" target="_blank" style="color: gold;">@Moon_Burger22</a></p>
     </section>
+
+    <!-- How to Buy Modal -->
+    <div id="howToBuyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🛒 How to Buy $MBGR</h2>
+            <p><strong>Step 1:</strong> Get a Binance Smart Chain-compatible wallet (e.g., MetaMask, Trust Wallet).</p>
+            <p><strong>Step 2:</strong> Buy BNB and swap it for $MBGR on PancakeSwap.</p>
+            <p><strong>Step 3:</strong> HODL and enjoy the ride! 🚀</p>
+        </div>
+    </div>
     
-    <section>
-        <h2>Where to Buy</h2>
-        <ul>
-            <li><a href="https://pancakeswap.finance/" target="_blank" style="color: gold;">PancakeSwap</a> - Trade BNB for $MBGR.</li>
-            <li>More exchanges coming soon!</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>FAQs About Buying</h2>
-        <ul>
-            <li><strong>Where can I buy $MBGR?</strong> Currently, $MBGR is available on <a href="https://pancakeswap.finance/" target="_blank" style="color: gold;">PancakeSwap</a>.</li>
-            <li><strong>Do I need BNB to swap?</strong> Yes, you need BNB to trade for $MBGR.</li>
-            <li><strong>How do I add $MBGR to my wallet?</strong> After purchase, manually add the token using our contract address.</li>
-            <li><strong>Will $MBGR be available on more exchanges?</strong> Yes! We plan to list on additional exchanges soon.</li>
-        </ul>
-    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var modal = document.getElementById("howToBuyModal");
+            var btn = document.getElementById("howToBuyBtn");
+            var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+    </script>
 </body>
 </html>
