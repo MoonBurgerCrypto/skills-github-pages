@@ -5,19 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoonBurger Tokenomics</title>
     <link rel="stylesheet" href="tokenomics.css">
-        <script>
-        function toggleDetails(id, element) {
-            var details = document.getElementById(id);
-            var arrow = element.querySelector(".arrow");
-
-            if (details.style.display === "none" || details.style.display === "") {
-                details.style.display = "block";
-                arrow.innerHTML = "▲"; // Change to up arrow
-            } else {
-                details.style.display = "none";
-                arrow.innerHTML = "▼"; // Change to down arrow
-            }
-        }
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".faq-question").forEach(button => {
+                button.addEventListener("click", function () {
+                    const answer = this.nextElementSibling;
+                    answer.style.display = answer.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
     </script>
 </head>
 <body>
@@ -62,64 +58,61 @@
         <h2>📢 Tokenomics FAQ</h2>
 
         <div class="faq-item">
-            <button class="faq-question">❓ What is MoonBurger? 
-            <div class="faq-answer">
+            <button class="faq-question">❓ What is MoonBurger?</button>
+            <div class="faq-answer" style="display: none;">
                 🍔 MoonBurger ($MBGR) is a community-driven meme token designed for fun, engagement, and DeFi utility. It combines rewards, burns, and liquidity to create a unique ecosystem.
             </div>
         </div>
 
         <div class="faq-item">
-            <button class="faq-question">❓ How do I buy MoonBurger? 
-            <div class="faq-answer">
+            <button class="faq-question">❓ How do I buy MoonBurger?</button>
+            <div class="faq-answer" style="display: none;">
                 💰 You can buy $MBGR on PancakeSwap using BNB. Connect your wallet, import the contract, set slippage to 5-6%, and confirm the trade.
             </div>
         </div>
 
         <div class="faq-item">
-            <button class="faq-question">❓ What is slippage?
-            <div class="faq-answer">
-                🔄Slippage is when the price of a cryptocurrency changes between the time you place an order and the time it’s actually executed.
+            <button class="faq-question">❓ What is slippage?</button>
+            <div class="faq-answer" style="display: none;">
+                🔄 Slippage is when the price of a cryptocurrency changes between the time you place an order and the time it’s actually executed.
                 You can set a limit to how much the price can change before the trade is canceled, helping you avoid paying too much or selling for too little.
             </div>
         </div>
 
         <div class="faq-item">
-            <button class="faq-question">❓ What is the total supply of $MBGR? 
-            <div class="faq-answer">
+            <button class="faq-question">❓ What is the total supply of $MBGR?</button>
+            <div class="faq-answer" style="display: none;">
                 🚀 The total supply of MoonBurger is **1,000,000,000 tokens**. A portion is locked for liquidity, development, and community rewards.
             </div>
         </div>
 
         <div class="faq-item">
-            <button class="faq-question">❓ Are there any transaction fees? 
-            <div class="faq-answer">
+            <button class="faq-question">❓ Are there any transaction fees?</button>
+            <div class="faq-answer" style="display: none;">
                 🔄 Yes, every transaction has a **4.5% fee**, which helps fund liquidity, marketing, development, and token burning.
             </div>
         </div>
 
         <div class="faq-item">
-            <button class="faq-question">❓ Is MoonBurger safe? 
-            <div class="faq-answer">
+            <button class="faq-question">❓ Is MoonBurger safe?</button>
+            <div class="faq-answer" style="display: none;">
                 🔒 Yes! MoonBurger has **locked liquidity, transparent tokenomics, and an active team**. Always DYOR before investing.
             </div>
         </div>
 
         <div class="faq-item">
-            <button class="faq-question">❓ Will MoonBurger offer staking or rewards? 
-            <div class="faq-answer">
+            <button class="faq-question">❓ Will MoonBurger offer staking or rewards?</button>
+            <div class="faq-answer" style="display: none;">
                 🎁 Yes! Future plans include **staking, yield farming, and exclusive NFT rewards** for holders.
             </div>
         </div>
 
         <div class="faq-item">
-            <button class="faq-question">❓ Where can I track the token supply? 
-            <div class="faq-answer">
+            <button class="faq-question">❓ Where can I track the token supply?</button>
+            <div class="faq-answer" style="display: none;">
                 📊 You can track $MBGR on **BscScan, CoinGecko, and CoinMarketCap** once listed.
             </div>
         </div>
     </section>
-
-  
-
 </body>
 </html>
