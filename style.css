@@ -1,13 +1,13 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #111;
+    background-color: #121212;
     color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
+/* Navigation Bar */
 nav {
     background: #1e1e1e;
     padding: 15px;
@@ -22,6 +22,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 0;
 }
 
 nav ul li {
@@ -30,7 +31,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* Changed from #121212 to #fff */
+    color: #fff;
     font-size: 18px;
     font-weight: bold;
     padding: 15px 20px;
@@ -45,95 +46,100 @@ nav ul li a:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
     transform: translateY(-3px);
-    color: #fff;
 }
 
-header {
-    padding: 50px 20px;
-    background-color: #333;
+/* Hero Section */
+.hero {
+    padding: 60px 20px;
+    background: #1e1e1e;
+    border-bottom: 4px solid #ffcc00;
 }
 
-header h1 {
+.hero h1 {
     font-size: 2.5em;
-    margin: 0;
+    color: #ffcc00;
 }
 
-header p {
+.hero p {
     font-size: 1.2em;
-    margin-top: 10px;
+    margin: 15px 0;
 }
 
-header a img {
-    margin-top: 15px;
-    transition: transform 0.3s ease-in-out;
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    color: #121212;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(255, 204, 0, 0.5);
 }
 
-header a img:hover {
-    transform: scale(1.1);
+.cta-button:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+    transform: translateY(-3px);
 }
 
 /* About Section */
 .about {
-    padding: 40px 20px;
-    background-color: #222;
-    border-top: 2px solid #ffcc00;
-    border-bottom: 2px solid #ffcc00;
+    padding: 50px 20px;
 }
 
 .about h2 {
     color: #ffcc00;
+    font-size: 2em;
+}
+
+/* Tokenomics Section */
+.tokenomics-preview {
+    padding: 50px 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+}
+
+.token-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.token-item {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 200px;
+    border: 2px solid #ffcc00;
+    transition: all 0.3s ease-in-out;
+}
+
+.token-item:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+    transform: scale(1.05);
+}
+
+/* Roadmap Section */
+.roadmap-preview {
+    padding: 50px 20px;
+}
+
+.roadmap-preview ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.roadmap-preview li {
+    margin: 10px 0;
 }
 
 /* FAQ Section */
 .faq {
-    padding: 40px 20px;
-}
-
-.faq h2 {
-    color: #ffcc00;
-    margin-bottom: 20px;
-}
-
-/* FAQ Items */
-.faq-item {
-    background-color: #333;
-    margin: 15px auto;
-    padding: 15px;
-    border-radius: 10px;
-    max-width: 600px;
-    text-align: left;
-}
-
-.faq-question {
-    background: none;
-    border: none;
-    color: #ffcc00;
-    font-size: 1.1em;
-    font-weight: bold;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.faq-question .arrow {
-    font-size: 1.3em;
-    color: #ffcc00;
-}
-
-.faq-answer {
-    display: none;
-    padding-top: 10px;
-    color: #ddd;
-    font-size: 0.95em;
-    line-height: 1.5;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .faq-item {
-        max-width: 90%;
-    }
-}
+    margin-top: 50px;
