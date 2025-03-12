@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoonBurger Tokenomics</title>
-    <link rel="stylesheet" href="tokenomics.css">
+    <title>MoonBurger</title>
+    <link rel="stylesheet" href="styles.css">
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll(".faq-question").forEach(button => {
-                button.addEventListener("click", function () {
-                    const answer = this.nextElementSibling;
-                    answer.style.display = answer.style.display === "block" ? "none" : "block";
-                });
-            });
-        });
+        function toggleFAQ(button) {
+            var answer = button.nextElementSibling;
+            var arrow = button.querySelector(".arrow");
+
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                arrow.innerHTML = "▼";
+            } else {
+                answer.style.display = "block";
+                arrow.innerHTML = "▲";
+            }
+        }
     </script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -24,114 +27,53 @@
             <li><a href="how-to-buy.html">How to Buy</a></li>
             <li><a href="tokenomics.html">Tokenomics</a></li>
             <li><a href="roadmap.html">Roadmap</a></li>
-            <li class="social-link">
-                <a href="https://x.com/Moon_Burger22" target="_blank">
-                    <i class="fab fa-x-twitter"></i>
-                </a>
-            </li>
         </ul>
     </nav>
 
     <header>
-        <h1>🍔 MoonBurger Tokenomics</h1>
-        <p>Understanding the mechanics behind $MBGR</p>
+        <h1>🍔 Welcome to MoonBurger!</h1>
+        <p>The tastiest meme token on the blockchain 🚀</p>
+        <a href="https://x.com/Moon_Burger22" target="_blank">
+            <img src="x-icon.png" alt="X (Twitter)" width="30">
+        </a>
     </header>
 
-    <section class="token-details">
-        <h2>📊 Transaction Fees: <span>4.5%</span></h2>
-        <p>What does the transaction fee contribute to?</p>
-        <div class="fee-breakdown">
-            <div class="fee-box">🔥 0.5% Buy and Burn</div>
-            <div class="fee-box">💧 1.5% Liquidity</div>
-            <div class="fee-box">📣 1% Marketing</div>
-            <div class="fee-box">⚙️ 1% Development</div>
-            <div class="fee-box">👨‍💻 0.5% Team</div>
+    <section class="about">
+        <h2>🌕 About MoonBurger</h2>
+        <p>MoonBurger ($MBGR) is a meme token designed for fun, community, and decentralized finance.</p>
+    </section>
+
+    <section class="faq">
+        <h2>📢 Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">❓ What is cryptocurrency? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                💰 Cryptocurrency is a **digital currency** that operates on blockchain technology. Unlike traditional money, it's decentralized and not controlled by banks or governments. Popular examples include **Bitcoin (BTC), Ethereum (ETH), and MoonBurger ($MBGR)!**
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">❓ What is MoonBurger? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                🍔 MoonBurger ($MBGR) is a **community-driven meme token** designed for fun and decentralized finance (DeFi). It rewards holders, burns tokens, and adds liquidity!
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">❓ What is slippage? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                🔄 Slippage is the **price difference** between when you place a trade and when it executes. Setting slippage (usually **5-6%**) ensures your transaction goes through smoothly.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">❓ Is MoonBurger safe? <span class="arrow">▼</span></button>
+            <div class="faq-answer">
+                🔒 Yes! MoonBurger has **locked liquidity, transparent tokenomics, and an active team**. Always DYOR before investing.
+            </div>
         </div>
     </section>
 
-    <section class="supply">
-        <h2>🚀 Total Supply: <span>1,000,000,000 $MBGR</span></h2>
-        <ul>
-            <li>🔐 <strong>47%</strong> Locked Liquidity</li>
-            <li>🎁 <strong>8%</strong> Airdrops & Rewards</li>
-            <li>📈 <strong>15%</strong> Community & Marketing</li>
-            <li>👨‍💻 <strong>12%</strong> Development Fund</li>
-            <li>🛠️ <strong>5%</strong> Reserve Fund</li>
-        </ul>
-    </section>
-
-  <section class="faq">
-    <h2>📢 Tokenomics FAQ</h2>
-
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">❓ What is cryptocurrency? <span class="arrow">▼</span></button>
-        <div class="faq-answer">
-            💰 Cryptocurrency is a **digital currency** that uses blockchain technology to ensure security and decentralization. Unlike traditional money, it's not controlled by banks or governments. Popular examples include **Bitcoin (BTC), Ethereum (ETH), and MoonBurger ($MBGR)!**
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">❓ What is MoonBurger? <span class="arrow">▼</span></button>
-        <div class="faq-answer">
-            🍔 MoonBurger ($MBGR) is a community-driven meme token designed for fun, engagement, and DeFi utility. It combines rewards, burns, and liquidity to create a unique ecosystem.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">❓ What is slippage? <span class="arrow">▼</span></button>
-        <div class="faq-answer">
-            🔄 Slippage is when the price of a cryptocurrency changes between the time you place an order and the time it’s actually executed.
-            You can set a limit to how much the price can change before the trade is canceled, helping you avoid paying too much or selling for too little.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">❓ What is the total supply of $MBGR? <span class="arrow">▼</span></button>
-        <div class="faq-answer">
-            🚀 The total supply of MoonBurger is **1,000,000,000 tokens**. A portion is locked for liquidity, development, and community rewards.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">❓ Are there any transaction fees? <span class="arrow">▼</span></button>
-        <div class="faq-answer">
-            🔄 Yes, every transaction has a **4.5% fee**, which helps fund liquidity, marketing, development, and token burning.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">❓ Is MoonBurger safe? <span class="arrow">▼</span></button>
-        <div class="faq-answer">
-            🔒 Yes! MoonBurger has **locked liquidity, transparent tokenomics, and an active team**. Always DYOR before investing.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">❓ Will MoonBurger offer staking or rewards? <span class="arrow">▼</span></button>
-        <div class="faq-answer">
-            🎁 Yes! Future plans include **staking, yield farming, and exclusive NFT rewards** for holders.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">❓ Where can I track the token supply? <span class="arrow">▼</span></button>
-        <div class="faq-answer">
-            📊 You can track $MBGR on **BscScan, CoinGecko, and CoinMarketCap** once listed.
-        </div>
-    </div>
-</section>
-
-<script>
-    function toggleFAQ(button) {
-        var answer = button.nextElementSibling;
-        var arrow = button.querySelector(".arrow");
-
-        if (answer.style.display === "block") {
-            answer.style.display = "none";
-            arrow.innerHTML = "▼";
-        } else {
-            answer.style.display = "block";
-            arrow.innerHTML = "▲";
-        }
-    }
-</script>
+</body>
+</html>
