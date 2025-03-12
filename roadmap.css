@@ -20,7 +20,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #121212;
+    color: #fff; /* Changed from #121212 to #fff */
     font-size: 18px;
     font-weight: bold;
     padding: 15px 20px;
