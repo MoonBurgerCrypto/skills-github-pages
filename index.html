@@ -130,3 +130,135 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonBurger - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>🍔 Welcome to MoonBurger</h1>
+        <p>The tastiest crypto token in the galaxy! 🚀</p>
+        <a href="how-to-buy.html" class="cta-button">Buy $MBGR Now</a>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>🔥 What is MoonBurger?</h2>
+        <p>
+            MoonBurger ($MBGR) is a meme-powered crypto token built for **fun, community, and real utility** in the DeFi space. 
+            We combine rewards, liquidity, and burns to make sure $MBGR stays fresh and juicy! 🍔💰
+        </p>
+    </section>
+
+    <!-- Tokenomics Preview -->
+    <section class="tokenomics-preview">
+        <h2>📊 Quick Tokenomics</h2>
+        <div class="token-box">
+            <div class="token-item">🚀 <strong>1,000,000,000</strong> Total Supply</div>
+            <div class="token-item">🔥 <strong>4.5%</strong> Transaction Fee</div>
+            <div class="token-item">💧 <strong>47%</strong> Liquidity Locked</div>
+            <div class="token-item">🎁 <strong>8%</strong> Airdrops & Rewards</div>
+        </div>
+        <a href="tokenomics.html" class="cta-button">See Full Tokenomics</a>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap-preview">
+        <h2>🛣️ The MoonBurger Journey</h2>
+        <p>We're cooking up a long-term plan for success. Here's a sneak peek at our roadmap:</p>
+        <ul>
+            <li>✅ Launch & Community Growth</li>
+            <li>📢 Marketing & Partnerships</li>
+            <li>🚀 CEX Listings</li>
+            <li>🎁 Staking & Rewards</li>
+            <li>🌕 NFT & Metaverse Integration</li>
+        </ul>
+        <a href="roadmap.html" class="cta-button">Explore the Roadmap</a>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>❓ Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">❓ What is cryptocurrency? 
+                <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+                Cryptocurrency is **digital money** that uses blockchain technology for security and decentralization. It allows users to make transactions without banks or middlemen.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">❓ What makes MoonBurger unique? 
+                <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+                MoonBurger isn’t just another meme token. It has a **real roadmap, strong community, and solid tokenomics**, making it a fun yet valuable asset in the crypto world.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">❓ Where can I track $MBGR? 
+                <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+                You can track MoonBurger ($MBGR) on **BscScan, CoinMarketCap, and CoinGecko** once listed.
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="socials">
+        <h2>🔗 Stay Connected</h2>
+        <a href="https://x.com/Moon_Burger22" target="_blank" class="social-link">
+            <img src="x-logo.png" alt="X (Twitter) Logo"> Follow us on X
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MoonBurger. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // FAQ Toggle Functionality
+        document.addEventListener("DOMContentLoaded", function() {
+            const faqButtons = document.querySelectorAll(".faq-question");
+
+            faqButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    const answer = this.nextElementSibling;
+                    const arrow = this.querySelector(".arrow");
+
+                    if (answer.style.display === "block") {
+                        answer.style.display = "none";
+                        arrow.innerHTML = "▼";
+                    } else {
+                        answer.style.display = "block";
+                        arrow.innerHTML = "▲";
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
