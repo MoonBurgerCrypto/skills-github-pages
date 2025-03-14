@@ -8,7 +8,6 @@ body {
     text-align: center;
 }
 
-/* Navigation Bar */
 /* Navigation Bar - Stays at Top */
 nav {
     position: fixed; /* Keeps it fixed on screen */
@@ -67,6 +66,14 @@ body {
         padding: 8px;
     }
 }
+
+/* Fix for Desktop - Navbar is not fixed */
+@media (min-width: 1025px) {
+    nav {
+        position: static; /* Removes the fixed position on large screens */
+    }
+}
+
 /* Hero Section */
 .hero {
     padding: 50px 20px;
@@ -184,6 +191,7 @@ footer {
     font-size: 0.9em;
     color: #ccc;
 }
+
 /* === Responsive Design === */
 
 /* Tablets (768px - 1024px) */
