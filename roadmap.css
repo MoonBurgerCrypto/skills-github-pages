@@ -12,15 +12,12 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-nav ul li {
-    display: inline;
+    padding: 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* Changed from #121212 to #fff */
+    color: #fff;
     font-size: 18px;
     font-weight: bold;
     padding: 15px 20px;
@@ -35,7 +32,6 @@ nav ul li a:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
     transform: translateY(-3px);
-    color: #fff;
 }
 
 body {
