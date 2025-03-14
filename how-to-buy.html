@@ -3,76 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoonBurgerCrypto - The Juiciest Meme Coin</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #111; color: #fff; padding: 20px; }
-        h1, h2, h3 { color: #ffcc00; }
-        .container { max-width: 800px; margin: auto; }
-        .button { background-color: #ffcc00; color: #111; padding: 10px 20px; margin: 10px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; }
-        .faq { text-align: left; margin-top: 30px; }
-        .faq h2 { text-align: center; }
-        .modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8); }
-        .modal-content { background-color: #222; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 50%; color: white; text-align: center; }
-        .close { color: #ffcc00; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
-        .socials { margin-top: 40px; }
-    </style>
+    <title>How to Buy - MoonBurger</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <nav>
+
+    <!-- Navigation Bar -->
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="how-to-buy.html" class="active">How to Buy</a></li>
             <li><a href="tokenomics.html">Tokenomics</a></li>
             <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="earn.html">Passive income</a></li>
-            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    
- 
-  
 
-    <!-- Socials Section -->
-    <section class="socials">
-        <h2>Follow Us on Social Media</h2>
-        <a href="https://x.com/Moon_Burger22" target="_blank">
-            <img src="twitter-logo.png" alt="Twitter Logo" width="50">
-        </a>
-        <p><a href="https://x.com/Moon_Burger22" target="_blank" style="color: gold;">@Moon_Burger22</a></p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>🚀 How to Buy $MBGR</h1>
+        <p>Get your hands on the tastiest crypto in the galaxy! 🍔</p>
+    </header>
+
+    <!-- Step-by-Step Guide -->
+    <section class="buy-steps">
+        <h2>📖 Step-by-Step Guide</h2>
+
+        <div class="step">
+            <h3>1️⃣ Create a Crypto Wallet</h3>
+            <p>Download and set up a wallet like <strong>MetaMask</strong> or <strong>Trust Wallet</strong>.</p>
+        </div>
+
+        <div class="step">
+            <h3>2️⃣ Fund Your Wallet</h3>
+            <p>Purchase <strong>BNB</strong> (Binance Coin) from an exchange and send it to your wallet.</p>
+        </div>
+
+        <div class="step">
+            <h3>3️⃣ Connect to a DEX</h3>
+            <p>Go to <a href="https://pancakeswap.finance" target="_blank">PancakeSwap</a> and connect your wallet.</p>
+        </div>
+
+        <div class="step">
+            <h3>4️⃣ Swap BNB for $MBGR</h3>
+            <p>Enter the MoonBurger contract address and swap BNB for $MBGR.</p>
+        </div>
+
+        <div class="step">
+            <h3>5️⃣ Add $MBGR to Your Wallet</h3>
+            <p>Manually add the MoonBurger token to your wallet to see your balance.</p>
+        </div>
     </section>
 
-    <!-- How to Buy Modal -->
-    <div id="howToBuyModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>🛒 How to Buy $MBGR</h2>
-            <p><strong>Step 1:</strong> Get a Binance Smart Chain-compatible wallet (e.g., MetaMask, Trust Wallet).</p>
-            <p><strong>Step 2:</strong> Buy BNB and swap it for $MBGR on PancakeSwap.</p>
-            <p><strong>Step 3:</strong> HODL and enjoy the ride! 🚀</p>
-        </div>
+    <!-- Buy Button -->
+    <div class="buy-now">
+        <a href="https://pancakeswap.finance" target="_blank" class="cta-button">Buy $MBGR on PancakeSwap</a>
     </div>
-    
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>❓ Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">❓ Do I need BNB to buy $MBGR? <span class="arrow">▼</span></button>
+            <div class="faq-answer">Yes! BNB is required to swap for MoonBurger on PancakeSwap.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">❓ Where can I track my $MBGR? <span class="arrow">▼</span></button>
+            <div class="faq-answer">Once listed, you can track $MBGR on BscScan, CoinGecko, and CoinMarketCap.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">❓ Is there a transaction fee? <span class="arrow">▼</span></button>
+            <div class="faq-answer">Yes, a small 4.5% fee applies to ensure liquidity and burns.</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MoonBurger. All rights reserved.</p>
+    </footer>
+
     <script>
+        // FAQ Toggle Functionality
         document.addEventListener("DOMContentLoaded", function() {
-            var modal = document.getElementById("howToBuyModal");
-            var btn = document.getElementById("howToBuyBtn");
-            var span = document.getElementsByClassName("close")[0];
+            const faqButtons = document.querySelectorAll(".faq-question");
 
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
+            faqButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    const answer = this.nextElementSibling;
+                    const arrow = this.querySelector(".arrow");
 
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
+                    if (answer.style.display === "block") {
+                        answer.style.display = "none";
+                        arrow.innerHTML = "▼";
+                    } else {
+                        answer.style.display = "block";
+                        arrow.innerHTML = "▲";
+                    }
+                });
+            });
         });
     </script>
+
 </body>
 </html>
