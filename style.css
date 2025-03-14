@@ -162,3 +162,76 @@ footer {
     font-size: 0.9em;
     color: #ccc;
 }
+/* === Responsive Design === */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .buy-steps {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .faq {
+        width: 90%;
+    }
+}
+
+/* Mobile Phones (max-width 767px) */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .buy-steps, .faq {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+/* Small Phones (max-width 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .buy-steps, .faq {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
