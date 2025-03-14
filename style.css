@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
@@ -25,10 +26,6 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -50,32 +47,23 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    padding: 60px 20px;
-    background: #1e1e1e;
-    border-bottom: 4px solid #ffcc00;
+    padding: 50px 20px;
 }
 
 .hero h1 {
     font-size: 2.5em;
-    color: #ffcc00;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin: 15px 0;
 }
 
 .cta-button {
     display: inline-block;
     background: linear-gradient(135deg, #ffcc00, #ff6600);
-    color: #121212;
+    padding: 15px 25px;
+    border-radius: 10px;
     font-size: 1.2em;
     font-weight: bold;
-    padding: 12px 25px;
-    border-radius: 10px;
+    color: #121212;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 3px 3px 10px rgba(255, 204, 0, 0.5);
+    transition: all 0.3s;
 }
 
 .cta-button:hover {
@@ -84,21 +72,14 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
-/* About Section */
-.about {
-    padding: 50px 20px;
-}
-
-.about h2 {
-    color: #ffcc00;
-    font-size: 2em;
-}
-
 /* Tokenomics Section */
-.tokenomics-preview {
-    padding: 50px 20px;
-    background: #1e1e1e;
+.tokenomics-preview, .roadmap-preview, .faq, .socials {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
     border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+    width: 80%;
 }
 
 .token-box {
@@ -115,31 +96,69 @@ nav ul li a:hover {
     border-radius: 10px;
     font-weight: bold;
     width: 200px;
+    text-transform: uppercase;
     border: 2px solid #ffcc00;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
 }
 
 .token-item:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
     transform: scale(1.05);
 }
 
-/* Roadmap Section */
-.roadmap-preview {
-    padding: 50px 20px;
-}
-
-.roadmap-preview ul {
-    list-style: none;
-    padding: 0;
-    font-size: 1.2em;
-}
-
-.roadmap-preview li {
-    margin: 10px 0;
-}
-
 /* FAQ Section */
-.faq {
-    margin-top: 50px;
+.faq-question {
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    color: #121212;
+    border: none;
+    padding: 12px 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+}
+
+.faq-answer {
+    display: none;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+}
+
+/* Socials */
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer */
+footer {
+    background: #1e1e1e;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #ccc;
+}
