@@ -26,10 +26,6 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     text-decoration: none;
     color: #fff; /* Changed from #121212 to #fff */
