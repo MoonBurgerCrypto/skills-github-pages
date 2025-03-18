@@ -20,32 +20,43 @@ a:hover {
 
 /* Navigation Bar */
 nav {
-    background: #222;
-    padding: 15px 0;
+    background: #1e1e1e;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
 }
 
 nav ul li a {
-    color: white;
+    text-decoration: none;
+    color: #fff; /* Changed from #121212 to #fff */
+    font-size: 18px;
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    box-shadow: 3px 3px 10px rgba(255, 204, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
 }
 
-nav ul li a.active, nav ul li a:hover {
-    background: #ffcc00;
-    color: #1a1a1a;
+nav ul li a:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+    transform: translateY(-3px);
+    color: #fff;
 }
 
 /* Hero Section */
