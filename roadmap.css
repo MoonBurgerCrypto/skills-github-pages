@@ -1,3 +1,15 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Navigation Bar */
 nav {
     background: #1e1e1e;
     padding: 15px;
@@ -11,17 +23,21 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 18px;
     font-weight: bold;
-    padding: 15px 25px; /* More padding for spacing */
-    border-radius: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
     background: linear-gradient(135deg, #ffcc00, #ff6600);
     transition: all 0.3s ease-in-out;
     display: inline-block;
@@ -32,46 +48,90 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    line-height: 1.8; /* Increased for better readability */
-}
-
-h1 {
-    color: #ffcc00;
-    margin-bottom: 20px; /* More spacing below headings */
-}
-
+/* Main Sections */
 section {
-    max-width: 600px;
-    margin: 30px auto; /* More spacing around sections */
-    padding: 25px;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
     background-color: #222;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 /* Clickable Steps */
+.step {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ff6600;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    background: #292929;
+}
+
+.step:hover {
+    color: #ffcc00;
+    background: #333;
+    transform: scale(1.05);
+}
+
+/* Details (Hidden by Default) */
 .details {
     display: none;
     padding: 20px;
     background-color: #444;
-    border-radius: 5px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
 }
 
-.step {
-    cursor: pointer;
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    border: none;
+    color: #121212;
+    padding: 14px 20px;
+    font-size: 16px;
     font-weight: bold;
-    color: #ff6600; /* Updated to orange */
-    transition: color 0.3s ease-in-out;
-    display: block;
-    padding: 10px 0; /* Added spacing between steps */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-.step:hover {
-    color: #ffcc00; /* Lighter orange when hovered */
+button:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+    .step {
+        padding: 10px;
+    }
 }
