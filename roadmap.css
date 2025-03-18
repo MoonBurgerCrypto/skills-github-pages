@@ -55,20 +55,7 @@ section {
     border-radius: 10px;
 }
 
-li {
-    margin: 10px 0;
-    background-color: #333;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: left;
-    cursor: pointer;
-}
 
-li .arrow {
-    float: right;
-    font-weight: bold;
-    color: #ffcc00;
-}
 
 .details {
     display: none;
