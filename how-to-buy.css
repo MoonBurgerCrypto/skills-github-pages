@@ -32,32 +32,31 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* Changed from #121212 to #fff */
+    color: white;
     font-size: 18px;
     font-weight: bold;
-    padding: 15px 20px;
-    border-radius: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
     background: linear-gradient(135deg, #ffcc00, #ff6600);
-    box-shadow: 3px 3px 10px rgba(255, 204, 0, 0.5);
     transition: all 0.3s ease-in-out;
     display: inline-block;
 }
 
 nav ul li a:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
     transform: translateY(-3px);
-    color: #fff;
 }
+
 
 /* Hero Section */
 .hero {
