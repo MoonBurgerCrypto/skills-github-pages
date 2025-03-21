@@ -168,7 +168,18 @@ body {
     font-size: 1em;
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
 }
+ 
+.gold-link {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold; /* Optional: makes the text stand out */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth effect */
+}
 
+.gold-link:hover {
+    color: #FFD700; /* A brighter gold shade */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Glowing effect */
+}
 /* Socials */
 .social-link {
     display: flex;
@@ -260,18 +271,6 @@ footer {
         width: 100%;
         padding: 10px;
     }
-
-    .gold-link {
-    color: gold;
-    text-decoration: none;
-    font-weight: bold; /* Optional: makes the text stand out */
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth effect */
-}
-
-.gold-link:hover {
-    color: #FFD700; /* A brighter gold shade */
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Glowing effect */
-}
 
     .cta-button {
         font-size: 0.9rem;
