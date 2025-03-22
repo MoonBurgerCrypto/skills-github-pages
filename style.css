@@ -70,13 +70,14 @@ nav ul li a:hover {
     color: #121212;
     text-decoration: none;
     transition: all 0.3s;
+    margin-top: 10px; /* Moves button 10px down */
 }
 
-.cta-button:hover {
-    background: linear-gradient(135deg, #ff6600, #ffcc00);
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
-    transform: translateY(-3px);
+.tokenomics-preview {
+    position: relative;
+    padding-bottom: 20px; /* Adds space inside the box to fit the button */
 }
+
 
 /* Tokenomics Section */
 .tokenomics-preview, .roadmap-preview, .faq, .socials {
