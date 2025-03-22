@@ -12,22 +12,22 @@
 
             if (details.style.display === "none" || details.style.display === "") {
                 details.style.display = "block";
-                arrow.innerHTML = "▲"; // Change to up arrow
+                arrow.innerHTML = "▲"; 
             } else {
                 details.style.display = "none";
-                arrow.innerHTML = "▼"; // Change to down arrow
+                arrow.innerHTML = "▼";
             }
         }
     </script>
 </head>
 <body>
-  <nav>
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="how-to-buy.html">How to Buy</a></li>
             <li><a href="tokenomics.html">Tokenomics</a></li>
             <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="earn.html">Passive income</a></li>
+            <li><a href="earn.html">Passive Income</a></li>
             <li><a href="whitepaper.html">Whitepaper</a></li>
         </ul>
     </nav>
@@ -57,48 +57,44 @@
                     <li>Distribute airdrops and community rewards</li>
                 </ul>
             </li>
-            <li onclick="toggleDetails('phase3', this)" class="clickable">
-                <span class="arrow">▼</span> <strong>Phase 3: Marketing & Partnerships</strong>
-                <ul id="phase3" class="details">
-                    <li>Increase influencer collaborations</li>
-                    <li>Launch paid ad campaigns</li>
-                    <li>Strategic partnerships with crypto communities</li>
-                </ul>
-            </li>
-            <li onclick="toggleDetails('phase4', this)" class="clickable">
-                <span class="arrow">▼</span> <strong>Phase 4: Major Exchange Listings & Utility Expansion</strong>
-                <ul id="phase4" class="details">
-                    <li>Apply for CoinGecko & CoinMarketCap listings</li>
-                    <li>Secure centralized exchange (CEX) listings</li>
-                    <li>Expand $MBGR with staking</li>
-                </ul>
-            </li>
-            <li onclick="toggleDetails('phase5', this)" class="clickable">
-                <span class="arrow">▼</span> <strong>Phase 5: The Future of MoonBurger</strong>
-                <ul id="phase5" class="details">
-                    <li>Expand to additional blockchains (Ethereum, Solana)</li>
-                    <li>Launch MoonBurger merchandise</li>
-                    <li>Host community events & giveaways</li>
-                    <li>Continue scaling and improving the ecosystem</li>
-                </ul>
-            </li>
-            <li onclick="toggleDetails('phase6', this)" class="clickable">
-                <span class="arrow">▼</span> <strong>Phase 6: Expand Passive Income</strong>
-                <ul id="phase6" class="details">
-                    <li>Introduce $MBGR staking rewards</li>
-                    <li>Launch liquidity farming on PancakeSwap</li>
-                    <li>Develop governance model for token holders</li>
-                </ul>
-            </li>
-            <li onclick="toggleDetails('phase7', this)" class="clickable">
-                <span class="arrow">▼</span> <strong>Phase 7: MoonBurger DAO & Future Innovations</strong>
-                <ul id="phase7" class="details">
-                    <li>Establish MoonBurger DAO for decentralized governance</li>
-                    <li>Introduce new DeFi utilities for $MBGR</li>
-                    <li>Explore real-world use cases and partnerships</li>
-                </ul>
-            </li>
         </ul>
+    </section>
+
+    <section class="progress">
+        <h2>✅ Roadmap Progress</h2>
+        <p>Track our milestones as we complete each phase.</p>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 40%;">40% Complete</div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>❓ Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleDetails('faq1', this)">When will $MBGR be listed on major exchanges? <span class="arrow">▼</span></button>
+            <div id="faq1" class="faq-answer">We plan to apply for major exchanges after securing a strong community and trading volume.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleDetails('faq2', this)">How can I participate in staking? <span class="arrow">▼</span></button>
+            <div id="faq2" class="faq-answer">Staking will be available in Phase 4, offering rewards for holding $MBGR.</div>
+        </div>
+    </section>
+
+    <section class="community-poll">
+        <h2>📊 Community Poll</h2>
+        <p>What features would you like to see next?</p>
+        <form>
+            <input type="radio" name="feature" value="staking"> More Staking Options<br>
+            <input type="radio" name="feature" value="merch"> MoonBurger Merchandise<br>
+            <input type="radio" name="feature" value="cex"> More CEX Listings<br>
+            <button type="submit">Vote</button>
+        </form>
+    </section>
+
+    <section class="social-feed">
+        <h2>📢 Live Community Updates</h2>
+        <p>Stay connected with our latest announcements.</p>
+        <iframe src="https://twitter.com/MoonBurgerCrypto" width="100%" height="400px"></iframe>
     </section>
 </body>
 </html>
