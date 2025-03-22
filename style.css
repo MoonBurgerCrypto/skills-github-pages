@@ -196,6 +196,11 @@ body {
     height: 30px;
 }
 
+.social-link a:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    transform: translateY(-3px);
+}
+
 /* Footer */
 footer {
     background: #1e1e1e;
