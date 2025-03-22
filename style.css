@@ -8,16 +8,18 @@ body {
     text-align: center;
 }
 
-/* Navigation Bar - Stays at Top */
-/* Navigation Bar */
-/* Navigation Bar */
+/* Navigation Bar - Fixed at Top */
 nav {
     background: #1e1e1e;
     padding: 15px;
-    position: sticky;
+    position: fixed; /* Fixes the navbar at the top */
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 80px; /* Prevents content from hiding under the navbar */
 }
 
 nav ul {
@@ -47,32 +49,6 @@ nav ul li a {
 nav ul li a:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     transform: translateY(-3px);
-}
-
-
-/* Make sure page content doesn’t get hidden under the navbar */
-body {
-    padding-top: 60px; /* Adjust this if needed based on nav height */
-}
-
-/* Ensure it works well on mobile */
-@media (max-width: 768px) {
-    nav ul {
-        flex-wrap: wrap; /* Prevents buttons from overlapping */
-        justify-content: center;
-    }
-    
-    nav ul li a {
-        font-size: 16px; /* Slightly smaller for mobile */
-        padding: 8px;
-    }
-}
-
-/* Fix for Desktop - Navbar is not fixed */
-@media (min-width: 1025px) {
-    nav {
-        position: static; /* Removes the fixed position on large screens */
-    }
 }
 
 /* Hero Section */
@@ -168,18 +144,31 @@ body {
     font-size: 1em;
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
 }
- 
+
+/* Fix for X Logo Hover Size */
+.x-logo:hover {
+    transform: none; /* Prevents hover effect */
+    box-shadow: none; /* Removes any hover shadow */
+}
+
+/* Fix Hyperlink Styling */
+a {
+    text-decoration: none; /* Removes underline from all links */
+    color: inherit; /* Keeps the text color default */
+}
+
+/* Keep Gold Styling Only for Specific Links */
 .gold-link {
     color: gold;
-    text-decoration: none;
-    font-weight: bold; /* Optional: makes the text stand out */
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth effect */
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .gold-link:hover {
-    color: #FFD700; /* A brighter gold shade */
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Glowing effect */
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
 }
+
 /* Socials */
 .social-link {
     display: flex;
@@ -282,5 +271,3 @@ footer {
         padding: 12px;
     }
 }
-
-
