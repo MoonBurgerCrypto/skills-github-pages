@@ -168,7 +168,7 @@ a {
 .gold-link:hover {
     color: #ffcc00; /* Lighter gold on hover */
     text-decoration: underline;
-    transform: translateY(-2px);
+    transform: translateY(-10px);
 }
 /* Socials */
 .social-link {
