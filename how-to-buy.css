@@ -1,3 +1,9 @@
+header {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    padding: 20px;
+    border-radius: 10px;
+}
+
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
