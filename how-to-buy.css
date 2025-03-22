@@ -194,6 +194,19 @@ nav ul li a:hover {
     display: block;
 }
 
+.gold-link {
+    color: gold;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.gold-link:hover {
+    color: #ffcc00; /* Lighter gold on hover */
+    text-decoration: underline;
+    transform: translateY(-10px);
+}
+
 
 /* Footer */
 footer {
