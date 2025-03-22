@@ -70,7 +70,7 @@ nav ul li a:hover {
     color: #121212;
     text-decoration: none;
     transition: all 0.3s;
-    margin-top: 10px; /* Moves button 10px down */
+    margin-top: 30px; /* Moves button 10px down */
 }
 
 .tokenomics-preview {
