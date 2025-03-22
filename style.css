@@ -158,17 +158,18 @@ a {
     color: inherit; /* Keeps the text color default */
 }
 
-/* Keep Gold Styling Only for Specific Links */
 .gold-link {
     color: gold;
+    text-decoration: underline;
     font-weight: bold;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.3s;
 }
 
 .gold-link:hover {
-    color: #FFD700;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    color: #ffcc00; /* Lighter gold on hover */
+    text-decoration: underline;
 }
+
 
 /* Socials */
 .social-link {
