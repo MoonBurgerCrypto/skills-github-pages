@@ -1,137 +1,152 @@
-/* General Styles */
 body {
-    font-family: "Arial", sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #121212;
-    color: #fff;
-    text-align: center;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    line-height: 1.8;
-}
-
-/* Navigation Bar */
-nav {
-    background: #1e1e1e;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
     padding: 0;
+    background-color: #222;
+    overflow: hidden;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
+    padding: 15px;
 }
 
 nav ul li a {
+    color: #ffcc00;
     text-decoration: none;
-    color: white;
-    font-size: 18px;
     font-weight: bold;
-    padding: 12px 20px;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #ffcc00, #ff6600);
-    transition: all 0.3s ease-in-out;
-    display: inline-block;
 }
 
-nav ul li a:hover {
+header {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
-    transform: translateY(-3px);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* Main Sections */
 section {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #222;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #1e1e1e;
+    border-radius: 10px;
 }
 
-/* Headings */
-h1, h2, h3 {
+h2 {
     color: #ffcc00;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
 }
 
-/* Clickable Steps */
-.step {
+/* Roadmap Styling */
+.clickable {
     cursor: pointer;
-    font-weight: bold;
-    color: #ff6600;
-    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
-    display: block;
-    padding: 12px;
+    background-color: #333;
+    padding: 15px;
     margin: 10px 0;
-    border-radius: 6px;
-    background: #292929;
+    border-radius: 10px;
 }
 
-.step:hover {
-    color: #ffcc00;
-    background: #333;
-    transform: scale(1.05);
+.clickable strong {
+    font-size: 1.2em;
 }
 
-/* Details (Hidden by Default) */
 .details {
     display: none;
-    padding: 20px;
     background-color: #444;
-    border-radius: 6px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    background-color: #333;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
     margin-top: 10px;
-    font-size: 16px;
-    text-align: left;
 }
 
-/* Buttons */
-button {
-    background: linear-gradient(135deg, #ffcc00, #ff6600);
-    border: none;
-    color: #121212;
-    padding: 14px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-button:hover {
+.progress-fill {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
-    transform: scale(1.05);
+    color: #121212;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    section {
-        width: 90%;
-        padding: 20px;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
+/* FAQ Section */
+.faq-item {
+    margin: 15px 0;
+}
 
-    nav ul li a {
-        padding: 10px 15px;
-        font-size: 16px;
-    }
-    
-    .step {
-        padding: 10px;
-    }
+.faq-question {
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    color: #121212;
+    border: none;
+    padding: 12px 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+}
+
+.faq-answer {
+    display: none;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+}
+
+/* Community Poll */
+.community-poll form {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.community-poll input {
+    margin: 5px;
+}
+
+.community-poll button {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    color: #121212;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.community-poll button:hover {
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.6);
+}
+
+/* Social Feed */
+.social-feed iframe {
+    border-radius: 10px;
+    border: none;
 }
