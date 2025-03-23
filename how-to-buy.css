@@ -61,6 +61,7 @@ nav ul li a:hover {
 .hero {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     padding: 30px;
+    border-radius: 25px; /* Removes rounded corners */
 }
 
 .hero h1 {
