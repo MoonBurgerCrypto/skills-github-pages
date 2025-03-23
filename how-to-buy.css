@@ -22,7 +22,7 @@ a:hover {
 nav {
     background: #1e1e1e;
     padding: 15px;
-    position: sticky;
+    position: fixed; /* Fixed navbar */
     top: 0;
     width: 100%;
     z-index: 100;
@@ -57,17 +57,16 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
-
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     padding: 30px;
-    border-radius: 0; /* Removes rounded corners */
 }
 
 .hero h1 {
     text-shadow: 0 0 15px rgba(255, 204, 0, 1); /* Bright yellow glow */
 }
+
 /* Step-by-Step Guide */
 .buy-steps {
     max-width: 800px;
@@ -200,7 +199,6 @@ nav ul li a:hover {
     text-decoration: underline;
     transform: translateY(-10px);
 }
-
 
 /* Footer */
 footer {
