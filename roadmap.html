@@ -4,144 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoonBurger Roadmap</title>
-    <link rel="stylesheet" href="roadmap.css">
-    <script>
-        function toggleDetails(id, element) {
-            var details = document.getElementById(id);
-            var arrow = element.querySelector(".arrow");
-
-            if (details.style.display === "none" || details.style.display === "") {
-                details.style.display = "block";
-                arrow.innerHTML = "▲"; 
-            } else {
-                details.style.display = "none";
-                arrow.innerHTML = "▼";
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your updated CSS -->
+    <script defer src="script.js"></script> <!-- JavaScript for interactivity -->
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="how-to-buy.html">How to Buy</a></li>
-            <li><a href="tokenomics.html">Tokenomics</a></li>
             <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="earn.html">Passive Income</a></li>
-            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="passive-income.html">Passive Income</a></li>
+            <li><a href="community.html">Community</a></li>
         </ul>
     </nav>
-    
-      <header class="hero">
-        <h1>🚀 MoonBurger Roadmap</h1>
-        <p>Our journey to the moon! See what’s coming next for $MBGR.</p>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>MoonBurger Roadmap</h1>
+        <p>Track our journey to the moon, one delicious step at a time! 🚀🍔</p>
     </header>
-    
+
+    <!-- Roadmap Section -->
     <section>
-        <h2>📍 Roadmap</h2>
-        <ul>
-            <li onclick="toggleDetails('phase1', this)" class="clickable">
-                <span class="arrow">▼</span> <strong>Phase 1: Launch & Community Building</strong>
-                <ul id="phase1" class="details">
-                    <li>Develop and launch website</li>
-                    <li>Deploy smart contract on Binance Smart Chain</li>
-                    <li>Begin social media marketing</li>
-                    <li>Grow Twitter community</li>
-                </ul>
-            </li>
-            <li onclick="toggleDetails('phase2', this)" class="clickable">
-                <span class="arrow">▼</span> <strong>Phase 2: Presale & PancakeSwap Listing</strong>
-                <ul id="phase2" class="details">
-                    <li>Conduct presale</li>
-                    <li>Launch $MBGR trading on PancakeSwap</li>
-                    <li>Distribute airdrops and community rewards</li>
-                </ul>
-            </li>
-        </ul>
-    <ul>
-    <li onclick="toggleDetails('phase3', this)" class="clickable">
-        <span class="arrow">▼</span> <strong>Phase 3: Marketing & Partnerships</strong>
-        <ul id="phase3" class="details">
-            <li>Launch influencer and KOL (Key Opinion Leader) campaigns</li>
-            <li>Collaborate with popular crypto YouTubers and Twitter spaces</li>
-            <li>Strategic partnerships with other crypto communities</li>
-            <li>Host AMAs (Ask Me Anything) with the MoonBurger team</li>
-        </ul>
-    </li>
-  <li onclick="toggleDetails('phase4', this)" class="clickable">
-        <span class="arrow">▼</span> <strong>Phase 4: Major Exchange Listings & Utility Expansion</strong>
-        <ul id="phase4" class="details">
-            <li>Apply for CoinGecko & CoinMarketCap listings</li>
-            <li>Secure centralized exchange (CEX) listings (Gate.io, KuCoin, etc.)</li>
-            <li>Expand $MBGR use cases, including staking and farming</li>
-        </ul>
-    </li>
+        <h2>Project Roadmap</h2>
 
-    <li onclick="toggleDetails('phase5', this)" class="clickable">
-        <span class="arrow">▼</span> <strong>Phase 5: Community Growth & Events</strong>
-        <ul id="phase5" class="details">
-            <li>Organize monthly community contests and giveaways</li>
-            <li>Launch exclusive MoonBurger merchandise</li>
-            <li>Introduce referral rewards for community members</li>
-            <li>Host virtual and IRL (In Real Life) meetups for MoonBurger holders</li>
-        </ul>
-    </li>
+        <div class="clickable" onclick="toggleDetails('phase1')">
+            <strong>Phase 1: Launch & Awareness 🚀</strong>
+        </div>
+        <div id="phase1" class="details">
+            <p>✅ Website launch</p>
+            <p>✅ Social media setup</p>
+            <p>✅ Community building</p>
+        </div>
 
-    <li onclick="toggleDetails('phase6', this)" class="clickable">
-        <span class="arrow">▼</span> <strong>Phase 6: Passive Income & Staking</strong>
-        <ul id="phase6" class="details">
-            <li>Introduce $MBGR staking rewards with high APY</li>
-            <li>Launch liquidity farming pools on PancakeSwap</li>
-            <li>Develop governance staking to allow holders to vote on changes</li>
-        </ul>
-    </li>
+        <div class="clickable" onclick="toggleDetails('phase2')">
+            <strong>Phase 2: Presale & Token Launch 💰</strong>
+        </div>
+        <div id="phase2" class="details">
+            <p>✅ Smart contract deployment</p>
+            <p>✅ Presale & liquidity setup</p>
+            <p>✅ Listings on CoinMarketCap & CoinGecko</p>
+        </div>
 
-    <li onclick="toggleDetails('phase7', this)" class="clickable">
-        <span class="arrow">▼</span> <strong>Phase 7: Future Innovations & Governance</strong>
-        <ul id="phase7" class="details">
-            <li>Establish the MoonBurger DAO for decentralized governance</li>
-            <li>Introduce automated yield farming strategies for $MBGR holders</li>
-            <li>Expand $MBGR into additional blockchain ecosystems (Ethereum, Solana)</li>
-        </ul>
-    </li>
-</ul>
-    </section>
+        <div class="clickable" onclick="toggleDetails('phase3')">
+            <strong>Phase 3: Staking & Yield Farming 🌱</strong>
+        </div>
+        <div id="phase3" class="details">
+            <p>🔄 Staking & farming launch</p>
+            <p>🔄 Expanding partnerships</p>
+            <p>🔄 Community growth campaigns</p>
+        </div>
 
-    <section class="progress">
-        <h2>✅ Roadmap Progress</h2>
-        <p>Track our milestones as we complete each phase.</p>
+        <div class="clickable" onclick="toggleDetails('phase4')">
+            <strong>Phase 4: NFT Integration & More 🍔</strong>
+        </div>
+        <div id="phase4" class="details">
+            <p>🔄 Exclusive MoonBurger NFTs</p>
+            <p>🔄 NFT marketplace partnerships</p>
+            <p>🔄 Merchandise store launch</p>
+        </div>
+
+        <!-- Progress Bar -->
         <div class="progress-bar">
-            <div class="progress-fill" style="width: 10%;">10% Complete</div>
+            <div class="progress-fill" style="width: 40%;">40% Complete</div>
         </div>
     </section>
 
-    <section class="faq">
-        <h2>❓ Frequently Asked Questions</h2>
+    <!-- FAQ Section -->
+    <section>
+        <h2>FAQ</h2>
+
         <div class="faq-item">
-            <button class="faq-question" onclick="toggleDetails('faq1', this)">When will $MBGR be listed on major exchanges? <span class="arrow">▼</span></button>
-            <div id="faq1" class="faq-answer">We plan to apply for major exchanges after securing a strong community and trading volume.</div>
+            <button class="faq-question" onclick="toggleDetails('faq1')">What is MoonBurger? 🍔</button>
+            <div id="faq1" class="faq-answer">
+                <p>MoonBurger is a meme-based cryptocurrency with real-world utility and staking rewards.</p>
+            </div>
         </div>
+
         <div class="faq-item">
-            <button class="faq-question" onclick="toggleDetails('faq2', this)">How can I participate in staking? <span class="arrow">▼</span></button>
-            <div id="faq2" class="faq-answer">Staking will be available in Phase 4, offering rewards for holding $MBGR.</div>
+            <button class="faq-question" onclick="toggleDetails('faq2')">How do I buy MoonBurger? 💰</button>
+            <div id="faq2" class="faq-answer">
+                <p>You can purchase MoonBurger on decentralized exchanges (DEX) like PancakeSwap.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleDetails('faq3')">Is there a staking option? 🌱</button>
+            <div id="faq3" class="faq-answer">
+                <p>Yes! You can stake MoonBurger tokens and earn rewards passively.</p>
+            </div>
         </div>
     </section>
 
+    <!-- Community Poll -->
     <section class="community-poll">
-        <h2>📊 Community Poll</h2>
-        <p>What features would you like to see next?</p>
-        <form>
-            <input type="radio" name="feature" value="staking"> More Staking Options<br>
-            <input type="radio" name="feature" value="merch"> MoonBurger Merchandise<br>
-            <input type="radio" name="feature" value="cex"> More CEX Listings<br>
+        <h2>Community Poll</h2>
+        <form id="poll-form">
+            <label><input type="radio" name="vote" value="staking"> More Staking Options</label><br>
+            <label><input type="radio" name="vote" value="nft"> More NFT Integration</label><br>
+            <label><input type="radio" name="vote" value="merch"> Official Merchandise</label><br>
             <button type="submit">Vote</button>
         </form>
+        <div id="poll-results" style="display: none;">
+            <h3>Poll Results:</h3>
+            <p id="results-text"></p>
+        </div>
     </section>
 
-    <section class="social-feed">
-        <h2>📢 Live Community Updates</h2>
-        <p>Stay connected with our latest announcements.</p>
-        <iframe src="https://twitter.com/MoonBurgerCrypto" width="100%" height="400px"></iframe>
-    </section>
+    <script>
+        function toggleDetails(id) {
+            let element = document.getElementById(id);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+
+        document.getElementById("poll-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let selectedOption = document.querySelector('input[name="vote"]:checked');
+            if (selectedOption) {
+                document.getElementById("results-text").innerText = "Thanks for voting! You chose: " + selectedOption.value;
+                document.getElementById("poll-results").style.display = "block";
+            } else {
+                alert("Please select an option before voting.");
+            }
+        });
+    </script>
+
 </body>
 </html>
