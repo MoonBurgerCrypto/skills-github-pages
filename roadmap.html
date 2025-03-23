@@ -31,7 +31,8 @@
         <h2>Project Roadmap</h2>
 
         <div class="clickable" onclick="toggleDetails('phase1')">
-            <strong>Phase 1: Launch & Awareness 🚀</strong>
+            <strong>Phase 1: Launch & Awareness 🚀</strong> 
+            <span class="arrow">▼</span>
         </div>
         <div id="phase1" class="details">
             <p>✅ Website launch</p>
@@ -41,6 +42,7 @@
 
         <div class="clickable" onclick="toggleDetails('phase2')">
             <strong>Phase 2: Presale & Token Launch 💰</strong>
+            <span class="arrow">▼</span>
         </div>
         <div id="phase2" class="details">
             <p>✅ Smart contract deployment</p>
@@ -50,6 +52,7 @@
 
         <div class="clickable" onclick="toggleDetails('phase3')">
             <strong>Phase 3: Staking & Yield Farming 🌱</strong>
+            <span class="arrow">▼</span>
         </div>
         <div id="phase3" class="details">
             <p>🔄 Staking & farming launch</p>
@@ -59,29 +62,12 @@
 
         <div class="clickable" onclick="toggleDetails('phase4')">
             <strong>Phase 4: NFT Integration & More 🍔</strong>
+            <span class="arrow">▼</span>
         </div>
         <div id="phase4" class="details">
             <p>🔄 Exclusive MoonBurger NFTs</p>
             <p>🔄 NFT marketplace partnerships</p>
             <p>🔄 Merchandise store launch</p>
-        </div>
-
-        <div class="clickable" onclick="toggleDetails('phase5')">
-            <strong>Phase 5: Expanding Ecosystem 🌍</strong>
-        </div>
-        <div id="phase5" class="details">
-            <p>🔄 Cross-chain integration</p>
-            <p>🔄 Expanding to new blockchains</p>
-            <p>🔄 More DeFi partnerships</p>
-        </div>
-
-        <div class="clickable" onclick="toggleDetails('phase6')">
-            <strong>Phase 6: Real-World Adoption 💳</strong>
-        </div>
-        <div id="phase6" class="details">
-            <p>🔄 Partnering with food delivery services</p>
-            <p>🔄 MoonBurger payment gateway</p>
-            <p>🔄 Real-world utility integration</p>
         </div>
 
         <!-- Progress Bar -->
@@ -95,39 +81,30 @@
         <h2>FAQ</h2>
 
         <div class="faq-item">
-            <button class="faq-question" onclick="toggleDetails('faq1')">What is MoonBurger? 🍔</button>
+            <button class="faq-question" onclick="toggleDetails('faq1')">
+                What is MoonBurger? 🍔 <span class="arrow">▼</span>
+            </button>
             <div id="faq1" class="faq-answer">
                 <p>MoonBurger is a meme-based cryptocurrency with real-world utility and staking rewards.</p>
             </div>
         </div>
 
         <div class="faq-item">
-            <button class="faq-question" onclick="toggleDetails('faq2')">How do I buy MoonBurger? 💰</button>
+            <button class="faq-question" onclick="toggleDetails('faq2')">
+                How do I buy MoonBurger? 💰 <span class="arrow">▼</span>
+            </button>
             <div id="faq2" class="faq-answer">
                 <p>You can purchase MoonBurger on decentralized exchanges (DEX) like PancakeSwap.</p>
             </div>
         </div>
 
         <div class="faq-item">
-            <button class="faq-question" onclick="toggleDetails('faq3')">Is there a staking option? 🌱</button>
+            <button class="faq-question" onclick="toggleDetails('faq3')">
+                Is there a staking option? 🌱 <span class="arrow">▼</span>
+            </button>
             <div id="faq3" class="faq-answer">
                 <p>Yes! You can stake MoonBurger tokens and earn rewards passively.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Community Poll -->
-    <section class="community-poll">
-        <h2>Community Poll</h2>
-        <form id="poll-form">
-            <label><input type="radio" name="vote" value="staking"> More Staking Options</label><br>
-            <label><input type="radio" name="vote" value="nft"> More NFT Integration</label><br>
-            <label><input type="radio" name="vote" value="merch"> Official Merchandise</label><br>
-            <button type="submit">Vote</button>
-        </form>
-        <div id="poll-results">
-            <h3>Poll Results:</h3>
-            <p id="results-text">No votes yet.</p>
         </div>
     </section>
 
