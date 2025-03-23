@@ -22,7 +22,7 @@ a:hover {
 nav {
     background: #1e1e1e;
     padding: 15px;
-    position: fixed; /* Fixed navbar */
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -61,11 +61,11 @@ nav ul li a:hover {
 .hero {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     padding: 30px;
-    border-radius: 25px; /* Removes rounded corners */
+    border-radius: 10px;
 }
 
 .hero h1 {
-    text-shadow: 0 0 15px rgba(255, 204, 0, 1); /* Bright yellow glow */
+    text-shadow: 0 0 15px rgba(255, 204, 0, 1);
 }
 
 /* Step-by-Step Guide */
@@ -93,10 +93,6 @@ nav ul li a:hover {
     color: #ff9900;
 }
 
-.step p {
-    font-size: 1rem;
-}
-
 /* Buy Now Button */
 .buy-now {
     margin: 30px 0;
@@ -116,6 +112,7 @@ nav ul li a:hover {
     background: #ff9900;
 }
 
+/* FAQ Section */
 .faq {
     margin-top: 50px;
     padding: 20px;
@@ -157,13 +154,13 @@ nav ul li a:hover {
 }
 
 .faq-question::after {
-    content: "▼"; /* Default down arrow */
+    content: "▼";
     font-size: 1.2em;
     transition: transform 0.3s ease-in-out;
 }
 
 .faq-question.open::after {
-    transform: rotate(180deg); /* Rotates arrow when active */
+    transform: rotate(180deg);
 }
 
 .faq-question:hover {
@@ -188,6 +185,7 @@ nav ul li a:hover {
     display: block;
 }
 
+/* Gold Link */
 .gold-link {
     color: gold;
     text-decoration: underline;
@@ -196,9 +194,8 @@ nav ul li a:hover {
 }
 
 .gold-link:hover {
-    color: #ffcc00; /* Lighter gold on hover */
+    color: #ffcc00;
     text-decoration: underline;
-    transform: translateY(-10px);
 }
 
 /* Footer */
