@@ -50,21 +50,10 @@ nav ul li a:hover {
     box-shadow: 0px 5px 15px rgba(255, 136, 0, 0.3);
 }
 
-.hero h1 {
-    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
-}
-
-/* Roadmap Section */
-section {
-    margin-top: 20px;
-    padding: 20px;
-}
-
 /* Clickable Roadmap Items */
-/* Roadmap Styling */
 .clickable {
     cursor: pointer;
-    background: #222; /* Darker background for visibility */
+    background: #222;
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
@@ -72,22 +61,14 @@ section {
     font-weight: bold;
     text-align: center;
     transition: background 0.3s, transform 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .clickable:hover {
-    background: #ff8800; /* Highlight color on hover */
-    transform: scale(1.05); /* Slight enlargement */
-}
-
-.details {
-    display: none; /* Initially hidden */
-    background: #333;
-    padding: 15px;
-    margin-top: 5px;
-    border-radius: 10px;
-    color: white;
-    font-size: 0.9em;
-    box-shadow: 0px 3px 10px rgba(255, 136, 0, 0.2);
+    background: #ff8800;
+    transform: scale(1.05);
 }
 
 /* Roadmap Details */
@@ -98,40 +79,20 @@ section {
     margin-top: 5px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* Progress Bar */
-.progress-bar {
-    background: #252525;
-    width: 80%;
-    border-radius: 10px;
-    margin: 20px auto;
-    height: 30px;
-    position: relative;
-    box-shadow: 0 0 10px rgba(255, 136, 0, 0.3);
+/* Arrow Icon */
+.arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
 }
 
-.progress-fill {
-    background: linear-gradient(135deg, #ff6600, #ffcc00);
-    width: 40%;
-    height: 100%;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    transition: width 0.5s ease-in-out;
+/* Rotate Arrow when Open */
+.open .arrow {
+    transform: rotate(180deg);
 }
 
-/* FAQ Section */
-.faq-item {
-    max-width: 600px;
-    margin: 12px auto;
-}
-
+/* FAQ Styling */
 .faq-question {
     background: #ffcc00;
     color: #121212;
@@ -149,59 +110,11 @@ section {
     transition: background 0.3s ease-in-out;
 }
 
-.faq-question:hover {
-    background: #ff9900;
-}
-
 .faq-answer {
     display: none;
     background-color: #252525;
-    color: white;
     padding: 12px;
     border-radius: 8px;
     margin-top: 5px;
     font-size: 1em;
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
-}
-
-.faq-answer.open {
-    display: block;
-}
-
-/* Community Poll */
-.community-poll {
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-.community-poll form {
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.community-poll button {
-    background: linear-gradient(135deg, #ff6600, #ffcc00);
-    padding: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    border: none;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.community-poll button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
-}
-
-/* Footer */
-footer {
-    background: #181818;
-    padding: 15px;
-    font-size: 0.9rem;
-    margin-top: 30px;
 }
