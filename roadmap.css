@@ -61,22 +61,33 @@ section {
 }
 
 /* Clickable Roadmap Items */
+/* Roadmap Styling */
 .clickable {
     cursor: pointer;
-    background: #242424;
+    background: #222; /* Darker background for visibility */
     padding: 15px;
-    margin: 12px auto;
+    margin: 10px 0;
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
-    max-width: 600px;
     text-align: center;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .clickable:hover {
+    background: #ff8800; /* Highlight color on hover */
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+.details {
+    display: none; /* Initially hidden */
     background: #333;
-    transform: scale(1.03);
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9em;
+    box-shadow: 0px 3px 10px rgba(255, 136, 0, 0.2);
 }
 
 /* Roadmap Details */
