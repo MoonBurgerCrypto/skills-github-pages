@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoonBurger Roadmap</title>
-    <link rel="stylesheet" href="roadmap.css"> <!-- Link to your updated CSS -->
-    <script defer src="script.js"></script> <!-- JavaScript for interactivity -->
+    <link rel="stylesheet" href="styles.css"> <!-- Updated CSS -->
+    <script defer src="script.js"></script> <!-- Updated JS -->
 </head>
 <body>
 
@@ -23,7 +23,7 @@
     <!-- Hero Section -->
     <header class="hero">
         <h1>MoonBurger Roadmap</h1>
-        <p>Track our journey to the moon, one delicious step at a time! 🚀🍔</p>
+        <p>Tracking our delicious journey to the moon! 🚀🍔</p>
     </header>
 
     <!-- Roadmap Section -->
@@ -112,28 +112,6 @@
             <p id="results-text"></p>
         </div>
     </section>
-
-    <script>
-        function toggleDetails(id) {
-            let element = document.getElementById(id);
-            if (element.style.display === "block") {
-                element.style.display = "none";
-            } else {
-                element.style.display = "block";
-            }
-        }
-
-        document.getElementById("poll-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            let selectedOption = document.querySelector('input[name="vote"]:checked');
-            if (selectedOption) {
-                document.getElementById("results-text").innerText = "Thanks for voting! You chose: " + selectedOption.value;
-                document.getElementById("poll-results").style.display = "block";
-            } else {
-                alert("Please select an option before voting.");
-            }
-        });
-    </script>
 
 </body>
 </html>
