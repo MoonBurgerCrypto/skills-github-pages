@@ -46,11 +46,6 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
-
-header {
-    margin: 0px 0;
-}
-
 h1 {
     font-size: 2em;
 }
