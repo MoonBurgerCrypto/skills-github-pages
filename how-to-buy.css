@@ -65,8 +65,9 @@ nav ul li a:hover {
     border-radius: 0; /* Removes rounded corners */
 }
 
-
-
+.hero h1 {
+    text-shadow: 0 0 15px rgba(255, 204, 0, 1); /* Bright yellow glow */
+}
 /* Step-by-Step Guide */
 .buy-steps {
     max-width: 800px;
