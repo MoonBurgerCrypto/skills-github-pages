@@ -68,14 +68,14 @@ nav ul li a:hover {
 
 .clickable:hover {
     background: #ff8800;
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 /* Roadmap Details */
 .details {
     display: none;
     background: #333;
-    padding: 15px;
+    padding: 12px;
     margin-top: 5px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
