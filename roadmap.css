@@ -52,23 +52,43 @@ nav ul li a:hover {
 
 /* Clickable Roadmap Items */
 .clickable {
-    cursor: pointer;
-    background: #222;
-    padding: 15px;
-    margin: 10px 0;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
     border-radius: 10px;
-    color: white;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+    width: 80%;
+    position: relative;
+    z-index: 10;
+}
+
+.clickable {
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    color: #121212;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
     font-weight: bold;
-    text-align: center;
-    transition: background 0.3s, transform 0.2s;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 2px solid #ffcc00;
+    outline: none;
 }
 
 .clickable:hover {
-    background: #ff8800;
-    transform: scale(1.008);
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+    transform: scale(1.02);
+}
+
+.clickable {
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Roadmap Details */
