@@ -56,6 +56,7 @@ nav ul li a:hover {
 }
 
 .faq-question {
+    margin-top: 40px;
     background: linear-gradient(135deg, #ffcc00, #ff6600);
     color: #121212;
     border: none;
