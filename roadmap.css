@@ -54,7 +54,7 @@ nav ul li a:hover {
 /* General FAQ Section */
 /* General Clickable Section (Now Styled Like FAQ) */
 .clickable {
-    margin: 1px;
+    margin: 0; /* Removed space between boxes */
     padding: 10px;
     background: linear-gradient(135deg, #ffcc00, #ff6600);
     color: #121212;
@@ -68,10 +68,22 @@ nav ul li a:hover {
     font-size: 1.2em;
     font-weight: bold;
     text-align: left;
-    width: 100%;
+    width: 90%; /* Reduced width so arrows don’t get cut off */
     outline: none;
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
 }
+
+/* Ensures the first and last boxes also touch */
+.clickable:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.clickable:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 
 /* Hover Effect */
 .clickable:hover {
