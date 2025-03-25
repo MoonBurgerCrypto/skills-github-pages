@@ -119,7 +119,7 @@ nav ul li a:hover {
     font-size: 1em;
 }
 
-.clickable:hover {
+.faq-question:hover {
     background: #ff8800;
     transform: scale(1.008);
 }
