@@ -50,16 +50,14 @@ nav ul li a:hover {
     box-shadow: 0px 5px 15px rgba(255, 136, 0, 0.3);
 }
 
-/* Clickable Roadmap Items */
-/* General FAQ Section */
-/* General Clickable Section (Now Styled Like FAQ) */
+/* Clickable Roadmap & FAQ Items */
 .clickable {
-    margin: 0; /* Removed space between boxes */
+    margin: 0; /* Ensures no gap between boxes */
     padding: 10px;
     background: linear-gradient(135deg, #ffcc00, #ff6600);
     color: #121212;
     border: 2px solid #ffcc00;
-    border-radius: 5px;
+    border-radius: 0; /* Removes rounded edges between touching items */
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     display: flex;
@@ -68,12 +66,12 @@ nav ul li a:hover {
     font-size: 1.2em;
     font-weight: bold;
     text-align: left;
-    width: 90%; /* Reduced width so arrows don’t get cut off */
+    width: 100%; /* Ensures full width */
     outline: none;
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
 }
 
-/* Ensures the first and last boxes also touch */
+/* First and Last Box Styling (Rounded Edges) */
 .clickable:first-child {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -83,7 +81,6 @@ nav ul li a:hover {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-
 
 /* Hover Effect */
 .clickable:hover {
@@ -108,14 +105,26 @@ nav ul li a:hover {
     display: none;
     background-color: #222;
     padding: 15px;
-    border-radius: 10px;
-    margin-top: 5px;
+    border-radius: 0; /* Removes gaps between expanded items */
     font-size: 1em;
     color: #fff;
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+    box-shadow: 0 0 10px rgba(255, 204, 0, 3);
     border-left: 4px solid #ffcc00;
     line-height: 1.5;
 }
+
+/* Ensure First Opened Item Has Rounded Corners */
+.details:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Ensure Last Opened Item Has Rounded Corners */
+.details:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 
 
 /* FAQ Styling */
