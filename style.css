@@ -6,20 +6,17 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    padding-top: 80px; /* Prevents content from hiding under the navbar */
 }
 
-/* Navigation Bar - Fixed at Top */
+/* Navigation Bar */
 nav {
     background: #1e1e1e;
     padding: 15px;
-    position: fixed; /* Fixes the navbar at the top */
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-}
-
-body {
-    padding-top: 80px; /* Prevents content from hiding under the navbar */
 }
 
 nav ul {
@@ -28,10 +25,6 @@ nav ul {
     justify-content: center;
     gap: 25px;
     padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
 }
 
 nav ul li a {
@@ -43,7 +36,6 @@ nav ul li a {
     border-radius: 8px;
     background: linear-gradient(135deg, #ffcc00, #ff6600);
     transition: all 0.3s ease-in-out;
-    display: inline-block;
 }
 
 nav ul li a:hover {
@@ -51,95 +43,45 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
-/* Hero Section */
-.hero {
-    background: #ff8800;
-    padding: 35px;
-    border-radius: 0;
-    box-shadow: 0px 5px 10px rgba(255, 136, 0, 0.3);
-}
-
-.hero h1 {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
-
-.cta-button {
-    display: inline-block;
-    background: linear-gradient(135deg, #ffcc00, #ff6600);
-    padding: 15px 25px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #121212;
-    text-decoration: none;
-    transition: all 0.3s;
-    margin-top: 30px; /* Moves button 10px down */
-}
-
-.tokenomics-preview {
-    position: relative;
-    padding-bottom: 20px; /* Adds space inside the box to fit the button */
-}
-
-
-/* Tokenomics Section */
-.tokenomics-preview, .roadmap-preview, .faq, .socials {
+/* FAQ Section */
+.faq {
     margin: 50px auto;
     padding: 20px;
     background-color: #1e1e1e;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
     width: 80%;
+    position: relative;
+    z-index: 10;
 }
 
-.token-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.token-item {
-    background-color: #222;
-    padding: 15px;
-    border-radius: 10px;
-    font-weight: bold;
-    width: 200px;
-    text-transform: uppercase;
-    border: 2px solid #ffcc00;
-    transition: all 0.3s;
-}
-
-.token-item:hover {
-    background: linear-gradient(135deg, #ff6600, #ffcc00);
-    transform: scale(1.05);
-}
-
-.cta-button:hover {
-     background: #ff8800;
-    transform: scale(1.099);
-/* FAQ Section */
 .faq-question {
     background: linear-gradient(135deg, #ffcc00, #ff6600);
     color: #121212;
     border: none;
-    padding: 12px 18px;
+    padding: 15px;
     width: 100%;
     text-align: left;
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 2px solid #ffcc00;
+    outline: none;
 }
 
 .faq-question:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+    transform: scale(1.02);
+}
+
+.faq-question .arrow {
+    transition: transform 0.3s ease-in-out;
 }
 
 .faq-answer {
@@ -149,137 +91,28 @@ nav ul li a:hover {
     border-radius: 10px;
     margin-top: 5px;
     font-size: 1em;
+    color: #fff;
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+    border-left: 4px solid #ffcc00;
+    line-height: 1.5;
 }
 
-/* Fix for X Logo Hover Size */
-.x-logo:hover {
-    transform: none; /* Prevents hover effect */
-    box-shadow: none; /* Removes any hover shadow */
-}
-
-/* Fix Hyperlink Styling */
-a {
-    text-decoration: none; /* Removes underline from all links */
-    color: inherit; /* Keeps the text color default */
-}
-
-.gold-link {
-    color: gold;
-    text-decoration: underline;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.gold-link:hover {
-    color: #ffcc00; /* Lighter gold on hover */
-    text-decoration: underline;
-    transform: translateY(-10px);
-}
-/* Socials */
-.social-link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.2em;
-    text-decoration: none;
-    color: #ffcc00;
-    font-weight: bold;
-}
-
-.social-link img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Socials */
-.x-logo {
-    transition: transform 0.3s ease-in-out;
-}
-
-.x-logo:hover {
-    transform: scale(1.1); /* Slightly enlarges the icon on hover */
-}
-
-
-/* Footer */
-footer {
-    background: #1e1e1e;
-    padding: 15px;
-    font-size: 0.9em;
-    color: #ccc;
-}
-
-/* === Responsive Design === */
-
-/* Tablets (768px - 1024px) */
+/* Responsive Design Fixes */
 @media (max-width: 1024px) {
-    .hero {
-        padding: 60px 15px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .buy-steps {
-        width: 90%;
-        padding: 15px;
-    }
-
     .faq {
         width: 90%;
     }
 }
 
-/* Mobile Phones (max-width 767px) */
 @media (max-width: 767px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .hero {
-        padding: 40px 10px;
-    }
-
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-
-    .buy-steps, .faq {
+    .faq {
         width: 95%;
-        padding: 15px;
-    }
-
-    .cta-button {
-        width: 100%;
-        padding: 15px;
-        font-size: 1rem;
     }
 }
 
-/* Small Phones (max-width 480px) */
 @media (max-width: 480px) {
-    .hero h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .buy-steps, .faq {
+    .faq {
         width: 100%;
         padding: 10px;
-    }
-
-    .cta-button {
-        font-size: 0.9rem;
-        padding: 12px;
     }
 }
