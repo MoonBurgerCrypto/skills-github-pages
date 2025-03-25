@@ -52,7 +52,7 @@ nav ul li a:hover {
 
 /* Clickable Roadmap Items */
 /* General FAQ Section */
-.faq {
+.clickable {
     margin: 50px auto;
     padding: 20px;
     background-color: #1e1e1e;
@@ -65,24 +65,21 @@ nav ul li a:hover {
 
 /* Clickable FAQ Question (Now Uses .clickable) */
 .clickable {
-    cursor: pointer;
-    background: #222;
-    padding: 15px;
-    margin: 10px 0;
+ margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
     border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    transition: background 0.3s, transform 0.2s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+    width: 80%;
+    position: relative;
+    z-index: 10;
 }
 
 /* Hover Effect */
 .clickable:hover {
-    background: #ff8800;
-    transform: scale(1.008);
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+    transform: scale(1.02);
 }
 
 /* Arrow Animation */
@@ -99,13 +96,14 @@ nav ul li a:hover {
 /* FAQ Answer (Matches Roadmap Details) */
 .details {
     display: none;
-    background-color: #333;
-    padding: 12px;
-    margin-top: 5px;
+    background-color: #222;
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
-    color: #fff;
+    margin-top: 5px;
     font-size: 1em;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+    border-left: 4px solid #ffcc00;
     line-height: 1.5;
 }
 
@@ -169,7 +167,7 @@ nav ul li a:hover {
 }
 
 .faq-question .arrow {
-    transition: transform 0.3s ease-in-out;
+     transform: rotate(180deg);
 }
 
 .faq-answer {
