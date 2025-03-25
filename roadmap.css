@@ -51,7 +51,8 @@ nav ul li a:hover {
 }
 
 /* Clickable Roadmap Items */
-.clickable {
+/* General FAQ Section */
+.faq {
     margin: 50px auto;
     padding: 20px;
     background-color: #1e1e1e;
@@ -62,34 +63,52 @@ nav ul li a:hover {
     z-index: 10;
 }
 
+/* Clickable FAQ Question (Now Uses .clickable) */
 .clickable {
-    background: linear-gradient(135deg, #ffcc00, #ff6600);
-    color: #121212;
-    border: none;
-    padding: 15px;
-    width: 100%;
-    text-align: left;
-    font-size: 1.2em;
-    font-weight: bold;
-    border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    background: #222;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s, transform 0.2s;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid #ffcc00;
-    outline: none;
 }
 
+/* Hover Effect */
 .clickable:hover {
-    background: linear-gradient(135deg, #ff6600, #ffcc00);
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
-    transform: scale(1.02);
+    background: #ff8800;
+    transform: scale(1.008);
 }
 
-.clickable {
-    transition: transform 0.3s ease-in-out;
+/* Arrow Animation */
+.arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
 }
+
+/* Rotate Arrow When Open */
+.open .arrow {
+    transform: rotate(180deg);
+}
+
+/* FAQ Answer (Matches Roadmap Details) */
+.details {
+    display: none;
+    background-color: #333;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
 
 /* Roadmap Details */
 .details {
