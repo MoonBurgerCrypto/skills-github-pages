@@ -107,6 +107,20 @@
             </div>
         </div>
     </section>
+<script>
+function toggleDetails(id) {
+    const element = document.getElementById(id);
+    const clickable = element.previousElementSibling;
+
+    if (element.style.display === "block") {
+        element.style.display = "none";
+        clickable.classList.remove("open");
+    } else {
+        element.style.display = "block";
+        clickable.classList.add("open");
+    }
+}
+</script>
 
 </body>
 </html>
