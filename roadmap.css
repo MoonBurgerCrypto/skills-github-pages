@@ -118,3 +118,8 @@ nav ul li a:hover {
     margin-top: 5px;
     font-size: 1em;
 }
+
+.clickable:hover {
+    background: #ff8800;
+    transform: scale(1.008);
+}
