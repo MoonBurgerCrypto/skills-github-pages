@@ -45,7 +45,7 @@ nav ul li a:hover {
 
 /* FAQ Section */
 .faq {
-    margin: 50px auto;
+    margin-top: 50px;
     padding: 20px;
     background-color: #1e1e1e;
     border-radius: 10px;
@@ -53,6 +53,18 @@ nav ul li a:hover {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    border: 3px solid #ffcc00;
+}
+
+.faq h2 {
+    color: #ffcc00;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 15px;
 }
 
 .faq-question {
@@ -70,19 +82,18 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid #ffcc00;
     position: relative;
+    border: 3px solid #ffcc00;
 }
 
-.faq h2 {
-    color: #ffcc00;
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
+.faq-question::after {
+    content: "▼"; /* Default down arrow */
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
 }
 
-.faq-item {
-    margin-bottom: 15px;
+.faq-question.open::after {
+    transform: rotate(180deg); /* Rotates arrow when active */
 }
 
 .faq-question:hover {
@@ -91,21 +102,20 @@ nav ul li a:hover {
     transform: scale(1.02);
 }
 
-.faq-question .arrow {
-    transition: transform 0.3s ease-in-out;
-}
-
 .faq-answer {
     display: none;
     background-color: #222;
+    color: #fff;
     padding: 15px;
     border-radius: 10px;
     margin-top: 5px;
     font-size: 1em;
-    color: #fff;
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
-    border-left: 4px solid #ffcc00;
-    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-answer.open {
+    display: block;
 }
 
 /* Responsive Design Fixes */
