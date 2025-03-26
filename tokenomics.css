@@ -147,6 +147,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    border: 3px solid #ffcc00;
 }
 
 .faq-question::after {
@@ -162,7 +163,7 @@ h1 {
 .faq-question:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
-    transform: translateY(-2px);
+    transform: scale(1.02);
 }
 
 .faq-answer {
