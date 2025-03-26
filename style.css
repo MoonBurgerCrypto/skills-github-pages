@@ -13,10 +13,10 @@ body {
 nav {
     background: #1e1e1e;
     padding: 15px;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
 }
 
 nav ul {
@@ -25,6 +25,10 @@ nav ul {
     justify-content: center;
     gap: 25px;
     padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
 }
 
 nav ul li a {
@@ -36,7 +40,14 @@ nav ul li a {
     border-radius: 8px;
     background: linear-gradient(135deg, #ffcc00, #ff6600);
     transition: all 0.3s ease-in-out;
+    display: inline-block;
 }
+
+nav ul li a:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    transform: translateY(-3px);
+}
+
 
 nav ul li a:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
