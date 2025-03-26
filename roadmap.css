@@ -89,6 +89,13 @@ nav ul li a:hover {
     transform: scale(1.02);
 }
 
+.clickable h2 {
+    color: #ffcc00;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 /* Arrow Animation */
 .arrow {
     font-size: 18px;
@@ -147,9 +154,17 @@ nav ul li a:hover {
     outline: none;
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
 }
+
 .Faq:first-child {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+.faq h2 {
+    color: #ffcc00;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .faq-question {
