@@ -167,7 +167,6 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-/* FAQ Section */
 .faq {
     margin-top: 50px;
     padding: 20px;
@@ -178,6 +177,17 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     border: 3px solid #ffcc00;
+}
+
+.faq h2 {
+    color: #ffcc00;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 15px;
 }
 
 .faq-question {
@@ -197,6 +207,16 @@ nav ul li a:hover {
     align-items: center;
     position: relative;
     border: 3px solid #ffcc00;
+}
+
+.faq-question::after {
+    content: "▼"; /* Default down arrow */
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-question.open::after {
+    transform: rotate(180deg); /* Rotates arrow when active */
 }
 
 .faq-question:hover {
