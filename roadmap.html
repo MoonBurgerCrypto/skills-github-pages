@@ -3,124 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoonBurger Roadmap</title>
-    <link rel="stylesheet" href="roadmap.css"> <!-- External CSS -->
-    <script defer src="script.js"></script> <!-- External JS -->
+    <title>MoonBurger - Roadmap & FAQ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="tokenomics.html">Tokenomics</a></li>
-            <li><a href="passive-income.html">Passive Income</a></li>
-            <li><a href="community.html">Community</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#faq">FAQ</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
-        <h1>MoonBurger Roadmap</h1>
-        <p>Tracking our delicious journey to the moon! 🚀🍔</p>
+        <h1>MoonBurger Roadmap & FAQ</h1>
+        <p>Track our progress and get your questions answered.</p>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </header>
 
-    <!-- Roadmap Section -->
-    <section>
-        <h2>Project Roadmap</h2>
-
-        <div class="clickable" onclick="toggleDetails('phase1')">
-            <strong>Phase 1: Launch & Awareness 🚀</strong> 
-            <span class="arrow">▼</span>
+    <section id="roadmap" class="roadmap">
+        <h2>Roadmap</h2>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
         </div>
-        <div id="phase1" class="details">
-            <p>✅ Website launch</p>
-            <p>✅ Social media setup</p>
-            <p> Community building</p>
+        <div class="clickable" onclick="toggleDetails('roadmap1')">
+            Phase 1 - Launch Preparation <span class="arrow">▼</span>
+        </div>
+        <div id="roadmap1" class="details">
+            <p>Finalize tokenomics, website launch, and community building.</p>
         </div>
 
-        <div class="clickable" onclick="toggleDetails('phase2')">
-            <strong>Phase 2: Presale & Token Launch 💰</strong>
-            <span class="arrow">▼</span>
+        <div class="clickable" onclick="toggleDetails('roadmap2')">
+            Phase 2 - Presale & Marketing <span class="arrow">▼</span>
         </div>
-        <div id="phase2" class="details">
-            <p> Smart contract deployment</p>
-            <p> Presale & liquidity setup</p>
-            <p> Listings on CoinMarketCap & CoinGecko</p>
+        <div id="roadmap2" class="details">
+            <p>Start presale, begin major marketing campaigns, and partnerships.</p>
         </div>
 
-        <div class="clickable" onclick="toggleDetails('phase3')">
-            <strong>Phase 3: Staking & Yield Farming 🌱</strong>
-            <span class="arrow">▼</span>
+        <div class="clickable" onclick="toggleDetails('roadmap3')">
+            Phase 3 - Exchange Listings <span class="arrow">▼</span>
         </div>
-        <div id="phase3" class="details">
-            <p>🔄 Staking & farming launch</p>
-            <p>🔄 Expanding partnerships</p>
-            <p>🔄 Community growth campaigns</p>
-        </div>
-
-        <div class="clickable" onclick="toggleDetails('phase4')">
-            <strong>Phase 4: NFT Integration & More 🍔</strong>
-            <span class="arrow">▼</span>
-        </div>
-        <div id="phase4" class="details">
-            <p>🔄 Exclusive MoonBurger NFTs</p>
-            <p>🔄 NFT marketplace partnerships</p>
-            <p>🔄 Merchandise store launch</p>
-        </div>
-
-        <!-- Progress Bar -->
-        <div class="progress-bar">
-            <div class="progress-fill">40% Complete</div>
+        <div id="roadmap3" class="details">
+            <p>Get listed on major exchanges and improve liquidity.</p>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section>
-        <h2>FAQ</h2>
+    <section id="countdown" class="countdown">
+        <h2>Next Big Event</h2>
+        <p>Presale Launch in:</p>
+        <div id="timer">00d 00h 00m 00s</div>
+    </section>
 
+    <section id="faq" class="faq">
+        <h2>FAQ</h2>
         <div class="faq-item">
             <button class="faq-question" onclick="toggleDetails('faq1')">
-                What is MoonBurger? 🍔 <span class="arrow">▼</span>
+                What is MoonBurger? <span class="arrow">▼</span>
             </button>
             <div id="faq1" class="faq-answer">
-                <p>MoonBurger is a meme-based cryptocurrency with real-world utility and staking rewards.</p>
+                <p>MoonBurger is a meme coin with real utility and community-driven initiatives.</p>
             </div>
         </div>
 
         <div class="faq-item">
             <button class="faq-question" onclick="toggleDetails('faq2')">
-                How do I buy MoonBurger? 💰 <span class="arrow">▼</span>
+                How can I buy MoonBurger? <span class="arrow">▼</span>
             </button>
             <div id="faq2" class="faq-answer">
-                <p>You can purchase MoonBurger on decentralized exchanges (DEX) like PancakeSwap.</p>
+                <p>You can purchase MoonBurger on decentralized exchanges and during the presale.</p>
             </div>
         </div>
 
         <div class="faq-item">
             <button class="faq-question" onclick="toggleDetails('faq3')">
-                Is there a staking option? 🌱 <span class="arrow">▼</span>
+                What are the benefits of holding MoonBurger? <span class="arrow">▼</span>
             </button>
             <div id="faq3" class="faq-answer">
-                <p>Yes! You can stake MoonBurger tokens and earn rewards passively.</p>
+                <p>Holding MoonBurger gives you access to staking rewards, governance, and community perks.</p>
             </div>
         </div>
     </section>
-<script>
-function toggleDetails(id) {
-    const element = document.getElementById(id);
-    const clickable = element.previousElementSibling;
 
-    if (element.style.display === "block") {
-        element.style.display = "none";
-        clickable.classList.remove("open");
-    } else {
-        element.style.display = "block";
-        clickable.classList.add("open");
-    }
-}
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
