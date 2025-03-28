@@ -85,7 +85,27 @@
             </div>
         </div>
     </section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const clickables = document.querySelectorAll(".clickable");
 
-    <script src="script.js"></script>
+    clickables.forEach(clickable => {
+        clickable.addEventListener("click", function () {
+            // Toggle 'open' class for the clicked element
+            this.classList.toggle("open");
+
+            // Find the next sibling element (the .details box)
+            const details = this.nextElementSibling;
+
+            // Toggle 'open' class and show/hide details smoothly
+            if (details) {
+                details.classList.toggle("open");
+                details.style.display = details.classList.contains("open") ? "block" : "none";
+            }
+        });
+    });
+});
+</script>
+
 </body>
 </html>
