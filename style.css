@@ -151,6 +151,18 @@ nav ul li a:hover {
     display: block;
 }
 
+.gold-link {
+    color: gold;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.gold-link:hover {
+    color: #ffcc00;
+}
+
+
 /* Responsive Design Fixes */
 @media (max-width: 1024px) {
     .faq {
