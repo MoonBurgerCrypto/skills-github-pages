@@ -22,17 +22,14 @@ a:hover {
 
 /* Navigation Bar */
 /* Navigation Bar - Fixed at Top */
+/* Navigation Bar */
 nav {
     background: #1e1e1e;
     padding: 15px;
-    position: fixed; /* Fixes the navbar at the top */
+    position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1000;
-}
-
-body {
-    padding-top: 80px; /* Prevents content from hiding under the navbar */
+    z-index: 100;
 }
 
 nav ul {
