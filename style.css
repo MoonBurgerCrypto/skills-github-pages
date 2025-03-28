@@ -92,6 +92,39 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
+/* Token Box Container */
+.token-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Individual Token Item Box */
+.token-item {
+    background-color: #1e1e1e; /* Default dark background */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid #ffcc00; /* Gold border */
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+    text-align: center;
+    min-width: 220px; /* Adjust size */
+}
+
+/* Hover Effect */
+.token-item:hover {
+    background-color: #ff8800; /* Orange background */
+    transform: scale(1.1); /* Slightly bigger */
+    box-shadow: 0 0 20px rgba(255, 136, 0, 0.6); /* Glow effect */
+    border-color: #ff6600; /* Darker orange border */
+}
+
+
 /* FAQ Section */
 .faq {
     margin-top: 50px;
