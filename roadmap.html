@@ -7,51 +7,68 @@
     <link rel="stylesheet" href="roadmap.css">
 </head>
 <body>
-      <nav>
+
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="how-to-buy.html">How to Buy</a></li>
             <li><a href="tokenomics.html">Tokenomics</a></li>
             <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="earn.html">Passive income</a></li>
+            <li><a href="earn.html">Passive Income</a></li>
             <li><a href="whitepaper.html">Whitepaper</a></li>
         </ul>
-      </nav>
+    </nav>
+
     <header class="hero">
         <h1>MoonBurger Roadmap & FAQ</h1>
-        <p>Track our progress and get your questions answered.</p>
+        <p>Track our journey to the moon and get all your questions answered!</p>
         <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </header>
 
     <section id="roadmap" class="roadmap">
-        <h2>Roadmap</h2>
+        <h2>🚀 Roadmap</h2>
         <div class="progress-bar-container">
             <div class="progress-bar" id="progress-bar"></div>
         </div>
+
         <div class="clickable" onclick="toggleDetails('roadmap1')">
             Phase 1 - Launch Preparation <span class="arrow">▼</span>
         </div>
         <div id="roadmap1" class="details">
-            <p>Finalize tokenomics, website launch, and community building.</p>
+            <p>✅ Finalize tokenomics, launch website, and grow the community.</p>
         </div>
 
         <div class="clickable" onclick="toggleDetails('roadmap2')">
             Phase 2 - Presale & Marketing <span class="arrow">▼</span>
         </div>
         <div id="roadmap2" class="details">
-            <p>Start presale, begin major marketing campaigns, and partnerships.</p>
+            <p>📢 Conduct presale, initiate major marketing campaigns, and secure partnerships.</p>
         </div>
 
         <div class="clickable" onclick="toggleDetails('roadmap3')">
             Phase 3 - Exchange Listings <span class="arrow">▼</span>
         </div>
         <div id="roadmap3" class="details">
-            <p>Get listed on major exchanges and improve liquidity.</p>
+            <p>📈 Get listed on top exchanges and improve liquidity.</p>
+        </div>
+
+        <div class="clickable" onclick="toggleDetails('roadmap4')">
+            Phase 4 - Utility Expansion <span class="arrow">▼</span>
+        </div>
+        <div id="roadmap4" class="details">
+            <p>🍔 Introduce staking, passive income features, and NFT integrations.</p>
+        </div>
+
+        <div class="clickable" onclick="toggleDetails('roadmap5')">
+            Phase 5 - Community Governance <span class="arrow">▼</span>
+        </div>
+        <div id="roadmap5" class="details">
+            <p>🏛 Launch DAO for community-driven decisions and governance.</p>
         </div>
     </section>
 
     <section id="countdown" class="countdown">
-        <h2>Next Big Event</h2>
+        <h2>📅 Next Big Event</h2>
         <p>Presale Launch in:</p>
         <div id="timer">00d 00h 00m 00s</div>
     </section>
@@ -60,15 +77,11 @@
         <h2>❓ Frequently Asked Questions</h2>
 
         <div class="faq-item">
-            <button class="faq-question">❓ Do I need BNB to buy $MBGR? </button>
-            <div class="faq-answer">Yes! BNB is required to swap for MoonBurger on PancakeSwap.</div>
-        </div>
-    </div>
-        
-        <div class="faq-item">
-            <button class="faq-question">❓ Do you guys plan to update the roadmap? </button>
-            <div class="faq-answer">
-                <p>Yes we plan to keep the roadmap up to date.</p>
+            <button class="faq-question" onclick="toggleDetails('faq1')">
+                Do I need BNB to buy $MBGR? <span class="arrow">▼</span>
+            </button>
+            <div id="faq1" class="faq-answer">
+                <p>Yes! BNB is required to swap for MoonBurger on PancakeSwap.</p>
             </div>
         </div>
 
@@ -90,26 +103,13 @@
             </div>
         </div>
     </section>
+
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const clickables = document.querySelectorAll(".clickable");
-
-    clickables.forEach(clickable => {
-        clickable.addEventListener("click", function () {
-            // Toggle 'open' class for the clicked element
-            this.classList.toggle("open");
-
-            // Find the next sibling element (the .details box)
-            const details = this.nextElementSibling;
-
-            // Toggle 'open' class and show/hide details smoothly
-            if (details) {
-                details.classList.toggle("open");
-                details.style.display = details.classList.contains("open") ? "block" : "none";
-            }
-        });
-    });
-});
+function toggleDetails(id) {
+    var element = document.getElementById(id);
+    element.classList.toggle("open");
+    element.style.display = element.classList.contains("open") ? "block" : "none";
+}
 </script>
 
 </body>
