@@ -8,7 +8,6 @@ body {
     text-align: center;
 }
 
-
 /* Navigation Bar */
 nav {
     background: #1e1e1e;
@@ -48,7 +47,6 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
-
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #ff8800, #ff6600);
@@ -75,7 +73,7 @@ nav ul li a:hover {
 }
 
 /* Roadmap Section */
-.roadmap {
+.roadmap, .faq {
     margin-top: 80px;
     padding: 20px;
     background-color: #1e1e1e;
@@ -85,16 +83,25 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     border: 3px solid #ffcc00;
+    text-align: left;
+}
+
+.roadmap h2, .faq h2 {
+    color: #ffcc00;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Progress Bar */
 .progress-bar-container {
-    width: 80%;
+    width: 100%;
     background-color: #333;
     border-radius: 10px;
     overflow: hidden;
-    margin: 20px auto;
+    margin: 20px 0;
     height: 20px;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
 }
 
 .progress-bar {
@@ -104,9 +111,8 @@ nav ul li a:hover {
     transition: width 0.5s ease-in-out;
 }
 
-/* Clickable Roadmap & FAQ Items */
-/* Clickable Container - Matches FAQ Styling */
-.clickable {
+/* Clickable Elements (Roadmap & FAQ) */
+.clickable, .faq-question {
     background: linear-gradient(135deg, #ffcc00, #ff6600);
     color: #121212;
     border: 3px solid #ffcc00;
@@ -126,27 +132,27 @@ nav ul li a:hover {
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
 }
 
-/* Hover Effect */
-.clickable:hover {
+/* Hover Effects */
+.clickable:hover, .faq-question:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
     transform: scale(1.02);
 }
 
 /* Arrow Animation */
-.clickable::after {
-    content: "▼"; /* Default down arrow */
+.clickable::after, .faq-question::after {
+    content: "▼";
     font-size: 1.2em;
     transition: transform 0.3s ease-in-out;
 }
 
 /* Rotate Arrow When Open */
-.clickable.open::after {
+.clickable.open::after, .faq-question.open::after {
     transform: rotate(180deg);
 }
 
-/* Clickable Content - Matches FAQ Answer */
-.details {
+/* Hidden Content (FAQ Answers & Roadmap Details) */
+.details, .faq-answer {
     display: none;
     background-color: #222;
     color: #fff;
@@ -161,10 +167,9 @@ nav ul li a:hover {
 }
 
 /* Open State */
-.details.open {
+.details.open, .faq-answer.open {
     display: block;
 }
-
 
 /* Countdown Timer */
 .countdown {
@@ -186,78 +191,18 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-.faq {
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid #ffcc00;
-}
-
-.faq h2 {
-    color: #ffcc00;
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.faq-item {
-    margin-bottom: 15px;
-}
-
-.faq-question {
-    background: linear-gradient(135deg, #ffcc00, #ff6600);
-    color: #121212;
-    border: none;
-    padding: 12px 18px;
-    width: 100%;
-    text-align: left;
-    font-size: 1.2em;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    border: 3px solid #ffcc00;
-}
-
-.faq-question::after {
-    content: "▼"; /* Default down arrow */
-    font-size: 1.2em;
-    transition: transform 0.3s ease-in-out;
-}
-
-.faq-question.open::after {
-    transform: rotate(180deg); /* Rotates arrow when active */
-}
-
-.faq-question:hover {
-    background: linear-gradient(135deg, #ff6600, #ffcc00);
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
-    transform: scale(1.02);
-}
-
-.faq-answer {
-    display: none;
-    background-color: #222;
-    color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 5px;
-    font-size: 1em;
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
-    transition: all 0.3s ease-in-out;
-}
-
-.faq-answer.open {
-    display: block;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .roadmap, .faq, .countdown {
+        width: 90%;
+    }
+    .clickable, .faq-question {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+    .progress-bar-container {
+        width: 100%;
+    }
 }
 
 /* Dark Mode */
@@ -274,12 +219,12 @@ nav ul li a:hover {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
 }
 
-.dark-mode .clickable {
+.dark-mode .clickable, .dark-mode .faq-question {
     background: linear-gradient(135deg, #ff6600, #ffcc00);
     color: #121212;
 }
 
-.dark-mode .details {
+.dark-mode .details, .dark-mode .faq-answer {
     background-color: #ddd;
     color: #121212;
 }
