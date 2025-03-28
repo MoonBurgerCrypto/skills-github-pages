@@ -2,7 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #121212;
-    color: #f5f5f5;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -35,7 +35,7 @@ nav ul li a {
     color: white;
     font-size: 18px;
     font-weight: bold;
-    padding: 12px 20px;
+    padding: 10px 18px;
     border-radius: 8px;
     background: linear-gradient(135deg, #ffcc00, #ff6600);
     transition: all 0.3s ease-in-out;
@@ -52,6 +52,16 @@ nav ul li a:hover {
     background: linear-gradient(135deg, #ff8800, #ff6600);
     padding: 40px;
     box-shadow: 0px 5px 15px rgba(255, 136, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    opacity: 0.9;
 }
 
 .hero button {
@@ -72,16 +82,14 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Roadmap Section */
+/* Roadmap & FAQ Sections */
 .roadmap, .faq {
-    margin-top: 80px;
-    padding: 20px;
+    margin: 50px auto;
+    padding: 25px;
     background-color: #1e1e1e;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     border: 3px solid #ffcc00;
     text-align: left;
 }
@@ -179,8 +187,6 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     border: 3px solid #ffcc00;
 }
 
