@@ -111,20 +111,19 @@
         <p>&copy; 2025 MoonBurger. All rights reserved.</p>
     </footer>
 <script>
-   document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     const faqButtons = document.querySelectorAll(".faq-question");
 
     faqButtons.forEach(button => {
         button.addEventListener("click", function() {
-            const answer = this.nextElementSibling;
-            const arrow = this.querySelector(".arrow");
+            const answer = this.nextElementSibling; // Get the answer div
+            const arrow = this.querySelector(".arrow"); // Get the arrow inside the question
 
-            this.classList.toggle("open"); // Toggle the 'open' class
+            this.classList.toggle("open"); // Toggle 'open' class for styling
+            answer.classList.toggle("open"); // Toggle visibility using CSS
 
-            if (answer.style.display === "block") {
-                answer.style.display = "none";
-            } else {
-                answer.style.display = "block";
+            if (arrow) {
+                arrow.classList.toggle("rotate"); // Toggle rotation for arrow
             }
         });
     });
