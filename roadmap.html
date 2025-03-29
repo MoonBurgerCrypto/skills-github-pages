@@ -145,42 +145,38 @@
     </div>
 </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    // Toggle Roadmap Sections
-    document.querySelectorAll(".clickable").forEach((item) => {
-        item.addEventListener("click", function () {
-            const details = this.nextElementSibling;
-            details.classList.toggle("open");
-            details.style.display = details.classList.contains("open") ? "block" : "none";
+ <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Hide all roadmap details initially
+            document.querySelectorAll(".details").forEach(details => {
+                details.style.display = "none";
+            });
 
-            // Rotate arrow icon
-            const arrow = this.querySelector(".arrow");
-            if (arrow) {
-                arrow.classList.toggle("rotate");
-            }
+            // Toggle Roadmap Sections
+            document.querySelectorAll(".clickable").forEach((item) => {
+                item.addEventListener("click", function () {
+                    const details = this.nextElementSibling;
+                    details.classList.toggle("open");
+                    details.style.display = details.classList.contains("open") ? "block" : "none";
+
+                    // Rotate arrow icon
+                    const arrow = this.querySelector(".arrow");
+                    if (arrow) {
+                        arrow.classList.toggle("rotate");
+                    }
+                });
+            });
+
+            // FAQ Toggle Functionality
+            document.querySelectorAll(".faq-question").forEach(button => {
+                button.addEventListener("click", function () {
+                    const answer = this.nextElementSibling;
+                    this.classList.toggle("open"); // Toggle the 'open' class
+                    answer.style.display = answer.classList.contains("open") ? "block" : "none";
+                });
+            });
         });
-    });
-
-    // FAQ Toggle Functionality
-    document.querySelectorAll(".faq-question").forEach(button => {
-        button.addEventListener("click", function () {
-            const answer = this.nextElementSibling;
-            this.classList.toggle("open"); // Toggle the 'open' class
-            answer.style.display = answer.classList.contains("open") ? "block" : "none";
-        });
-    });
-});
-</script>
-<script>
-    .arrow {
-    transition: transform 0.3s ease-in-out;
-    display: inline-block;
-}
-
-.rotate {
-    transform: rotate(180deg);
-}
+    </script>
 </script>
 
 </body>
