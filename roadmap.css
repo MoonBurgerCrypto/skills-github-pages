@@ -142,6 +142,18 @@ section {
 }
 
 /* FAQ Section */
+.faq {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #ffcc00;
+}
+
 .faq h2 {
     color: #ffcc00;
     font-size: 2em;
@@ -149,21 +161,37 @@ section {
     text-align: center;
 }
 
+.faq-item {
+    margin-bottom: 15px;
+}
+
 .faq-question {
     background: linear-gradient(135deg, #ffcc00, #ff6600);
     color: #121212;
-    border: 3px solid #ffcc00;
-    padding: 15px;
+    border: none;
+    padding: 12px 18px;
+    width: 100%;
+    text-align: left;
     font-size: 1.2em;
     font-weight: bold;
-    text-align: left;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 15px;
     transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    border: 3px solid #ffcc00;
+}
+
+.faq-question::after {
+    content: "▼";
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-question.open::after {
+    transform: rotate(180deg);
 }
 
 .faq-question:hover {
@@ -187,7 +215,6 @@ section {
 .faq-answer.open {
     display: block;
 }
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     nav ul {
