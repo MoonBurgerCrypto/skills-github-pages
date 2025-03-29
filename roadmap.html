@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -160,6 +161,33 @@ function toggleDetails(id) {
     element.style.display = element.classList.contains("open") ? "block" : "none";
 }
 </script>
+   <script
+     document.addEventListener("DOMContentLoaded", function () {
+    // Toggle Roadmap Sections
+    document.querySelectorAll(".clickable").forEach((item) => {
+        item.addEventListener("click", function () {
+            const details = this.nextElementSibling;
+            details.classList.toggle("open");
+            details.style.display = details.classList.contains("open") ? "block" : "none";
+
+            // Rotate arrow icon
+            this.querySelector(".arrow").classList.toggle("rotate");
+        });
+    });
+
+    // Toggle FAQ Sections
+    document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", function () {
+            const answer = this.nextElementSibling;
+            answer.classList.toggle("open");
+            answer.style.display = answer.classList.contains("open") ? "block" : "none";
+
+            // Rotate arrow icon
+            this.querySelector("::after").classList.toggle("rotate");
+        });
+    });
+});
+   </script>
 
 </body>
 </html>
