@@ -63,8 +63,8 @@ nav ul li a:hover {
     opacity: 0.9;
 }
 
-/* Roadmap Section */
-.roadmap {
+/* Sections Styling */
+section {
     margin: 50px auto;
     padding: 30px;
     background-color: #1e1e1e;
@@ -75,6 +75,7 @@ nav ul li a:hover {
     border: 3px solid #ffcc00;
 }
 
+/* Roadmap Section */
 .roadmap h2 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -122,18 +123,25 @@ nav ul li a:hover {
     transform: scale(1.02);
 }
 
-/* FAQ Section */
-.faq {
+/* Countdown Section */
+.countdown {
     margin: 50px auto;
-    padding: 30px;
+    padding: 25px;
     background-color: #1e1e1e;
     border-radius: 12px;
     width: 85%;
-    max-width: 1000px;
+    max-width: 600px;
     box-shadow: 0 4px 10px rgba(255, 136, 0, 0.2);
-    border: 3px solid #ffcc00;
 }
 
+#timer {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+/* FAQ Section */
 .faq h2 {
     color: #ffcc00;
     font-size: 2em;
@@ -195,7 +203,7 @@ nav ul li a:hover {
         font-size: 1em;
     }
 
-    .roadmap, .faq {
+    section {
         width: 95%;
     }
 }
