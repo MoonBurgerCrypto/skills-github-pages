@@ -86,15 +86,7 @@
         </ul>
     </div>
 </section>
-<script>
-function toggleDetails(id) {
-    var element = document.getElementById(id);
-    element.style.display = (element.style.display === 'block') ? 'none' : 'block';
-}
-</script>
-
-
-    <section id="countdown" class="countdown">
+  <section id="countdown" class="countdown">
         <h2>📅 Next Big Event</h2>
         <p>Presale Launch in:</p>
         <div id="timer">00d 00h 00m 00s</div>
@@ -154,12 +146,6 @@ function toggleDetails(id) {
 </section>
 
 <script>
-function toggleDetails(id) {
-    var element = document.getElementById(id);
-    element.classList.toggle("open");
-    element.style.display = element.classList.contains("open") ? "block" : "none";
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     // Toggle Roadmap Sections
     document.querySelectorAll(".clickable").forEach((item) => {
@@ -175,30 +161,27 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const faqButtons = document.querySelectorAll(".faq-question");
 
-    faqButtons.forEach(button => {
-        button.addEventListener("click", function() {
+    // FAQ Toggle Functionality
+    document.querySelectorAll(".faq-question").forEach(button => {
+        button.addEventListener("click", function () {
             const answer = this.nextElementSibling;
-            const arrow = this.querySelector(".arrow");
-
             this.classList.toggle("open"); // Toggle the 'open' class
-
-            if (answer.style.display === "block") {
-                answer.style.display = "none";
-            } else {
-                answer.style.display = "block";
-            }
+            answer.style.display = answer.classList.contains("open") ? "block" : "none";
         });
     });
 });
-
 </script>
+<script>
+    .arrow {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
 
-
-
+.rotate {
+    transform: rotate(180deg);
+}
+</script>
 
 </body>
 </html>
