@@ -199,3 +199,20 @@ h1 {
 .faq-answer.open {
     display: block;
 }
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question .arrow {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.faq-question.open .arrow {
+    transform: rotate(180deg);
+}
+
