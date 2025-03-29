@@ -25,47 +25,74 @@
         <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </header>
 
-    <section id="roadmap" class="roadmap">
-        <h2>🚀 Roadmap</h2>
-        <div class="progress-bar-container">
-            <div class="progress-bar" id="progress-bar"></div>
-        </div>
+ <section id="roadmap" class="roadmap">
+    <h2>🚀 Roadmap</h2>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
 
-        <div class="clickable" onclick="toggleDetails('roadmap1')">
-            Phase 1 - Launch Preparation <span class="arrow">▼</span>
-        </div>
-        <div id="roadmap1" class="details">
-            <p>✅ Finalize tokenomics, launch website, and grow the community.</p>
-        </div>
+    <div class="clickable" onclick="toggleDetails('roadmap1')">
+        Phase 1 - Launch Preparation <span class="arrow">▼</span>
+    </div>
+    <div id="roadmap1" class="details">
+        <ul>
+            <li>✅ Finalize tokenomics, including total supply and rewards.</li>
+            <li>✅ Develop and launch the official MoonBurger website.</li>
+            <li>✅ Build an active community on Telegram, Discord, and Twitter.</li>
+        </ul>
+    </div>
 
-        <div class="clickable" onclick="toggleDetails('roadmap2')">
-            Phase 2 - Presale & Marketing <span class="arrow">▼</span>
-        </div>
-        <div id="roadmap2" class="details">
-            <p>📢 Conduct presale, initiate major marketing campaigns, and secure partnerships.</p>
-        </div>
+    <div class="clickable" onclick="toggleDetails('roadmap2')">
+        Phase 2 - Presale & Marketing <span class="arrow">▼</span>
+    </div>
+    <div id="roadmap2" class="details">
+        <ul>
+            <li>📢 Launch presale with exclusive rewards for early investors.</li>
+            <li>📢 Initiate large-scale marketing campaigns with influencers.</li>
+            <li>🤝 Secure partnerships with DeFi projects and exchanges.</li>
+        </ul>
+    </div>
 
-        <div class="clickable" onclick="toggleDetails('roadmap3')">
-            Phase 3 - Exchange Listings <span class="arrow">▼</span>
-        </div>
-        <div id="roadmap3" class="details">
-            <p>📈 Get listed on top exchanges and improve liquidity.</p>
-        </div>
+    <div class="clickable" onclick="toggleDetails('roadmap3')">
+        Phase 3 - Exchange Listings <span class="arrow">▼</span>
+    </div>
+    <div id="roadmap3" class="details">
+        <ul>
+            <li>📈 List $MBGR on PancakeSwap for decentralized trading.</li>
+            <li>📈 Apply for major exchange listings (CEXs like KuCoin & Binance).</li>
+            <li>💰 Strengthen liquidity pools for price stability.</li>
+        </ul>
+    </div>
 
-        <div class="clickable" onclick="toggleDetails('roadmap4')">
-            Phase 4 - Utility Expansion <span class="arrow">▼</span>
-        </div>
-        <div id="roadmap4" class="details">
-            <p>🍔 Introduce staking, passive income features, and NFT integrations.</p>
-        </div>
+    <div class="clickable" onclick="toggleDetails('roadmap4')">
+        Phase 4 - Utility Expansion <span class="arrow">▼</span>
+    </div>
+    <div id="roadmap4" class="details">
+        <ul>
+            <li>💸 Introduce staking & yield farming for passive income.</li>
+            <li>🎨 Launch MoonBurger-themed NFTs with real utilities.</li>
+            <li>🛍 Expand the MoonBurger ecosystem with exclusive merch.</li>
+        </ul>
+    </div>
 
-        <div class="clickable" onclick="toggleDetails('roadmap5')">
-            Phase 5 - Community Governance <span class="arrow">▼</span>
-        </div>
-        <div id="roadmap5" class="details">
-            <p>🏛 Launch DAO for community-driven decisions and governance.</p>
-        </div>
-    </section>
+    <div class="clickable" onclick="toggleDetails('roadmap5')">
+        Phase 5 - Community Governance <span class="arrow">▼</span>
+    </div>
+    <div id="roadmap5" class="details">
+        <ul>
+            <li>🗳 Establish a DAO where holders vote on key decisions.</li>
+            <li>📢 Empower community developers to enhance the ecosystem.</li>
+            <li>🚀 Ensure long-term sustainability with continuous updates.</li>
+        </ul>
+    </div>
+
+<script>
+function toggleDetails(id) {
+    var element = document.getElementById(id);
+    element.style.display = (element.style.display === 'block') ? 'none' : 'block';
+}
+</script>
+
 
     <section id="countdown" class="countdown">
         <h2>📅 Next Big Event</h2>
