@@ -209,6 +209,7 @@ nav ul li a:hover {
 }
 
 /* FAQ Section */
+/* FAQ Section */
 .faq {
     margin-top: 50px;
     padding: 20px;
@@ -280,7 +281,8 @@ nav ul li a:hover {
 }
 
 .faq-answer.open {
-    diplay: block;
+    display: block;
+}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
