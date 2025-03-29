@@ -98,45 +98,97 @@ nav ul li a:hover {
 }
 
 /* Clickable Roadmap Phases */
-.clickable {
+/* General Styling */
+.roadmap, .faq {
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    width: 85%;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+    border: 3px solid #ffcc00;
+}
+
+/* Headings */
+.roadmap h2, .faq h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffcc00;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    width: 100%;
+    background-color: #333;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 100%;
     background: linear-gradient(135deg, #ffcc00, #ff6600);
+    transition: width 0.5s ease-in-out;
+}
+
+/* Clickable Roadmap Phases & FAQ Questions */
+.clickable, .faq-question {
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    color: #121212;
+    border: 3px solid #ffcc00;
     padding: 15px;
     font-size: 1.2em;
     font-weight: bold;
     text-align: left;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 15px;
-    transition: background 0.3s ease-in-out, transform 0.2s;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
-.clickable:hover {
-    background: linear-gradient(135deg, #ff8800, #ff4400);
+.clickable:hover, .faq-question:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
     transform: scale(1.02);
 }
 
-.arrow {
-    float: right;
+/* Arrows for dropdowns */
+.arrow, .faq-question::after {
+    content: "▼";
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Roadmap Details */
-.details {
+.clickable.open .arrow, .faq-question.open::after {
+    transform: rotate(180deg);
+}
+
+/* Roadmap Details & FAQ Answers */
+.details, .faq-answer {
     display: none;
-    background-color: #252525;
+    background-color: #222;
+    color: #fff;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 5px;
     font-size: 1em;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease-in-out, transform 0.3s;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+    transition: all 0.3s ease-in-out;
 }
 
-.details.open {
+.details.open, .faq-answer.open {
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
+
 
 /* Countdown */
 .countdown {
