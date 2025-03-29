@@ -175,23 +175,28 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const faqButtons = document.querySelectorAll(".faq-question");
 
-    // Toggle FAQ Sections
-    document.querySelectorAll(".faq-question").forEach((question) => {
-        question.addEventListener("click", function () {
+    faqButtons.forEach(button => {
+        button.addEventListener("click", function() {
             const answer = this.nextElementSibling;
-            answer.classList.toggle("open");
-            answer.style.display = answer.classList.contains("open") ? "block" : "none";
-
-            // Rotate arrow icon if present
             const arrow = this.querySelector(".arrow");
-            if (arrow) {
-                arrow.classList.toggle("rotate");
+
+            this.classList.toggle("open"); // Toggle the 'open' class
+
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
             }
         });
     });
 });
+
 </script>
+
 
 
 
