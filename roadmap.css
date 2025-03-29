@@ -218,6 +218,15 @@ section {
     display: block;
 }
 
+/* Fix: Arrow Rotation */
+.arrow {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     nav ul {
