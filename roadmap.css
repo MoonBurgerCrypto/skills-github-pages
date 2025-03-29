@@ -284,6 +284,22 @@ nav ul li a:hover {
     display: block;
 }
 
+.details, .faq-answer {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.details.open, .faq-answer.open {
+    display: block;
+    opacity: 1;
+}
+
+/* Arrow rotation */
+.arrow.rotate, .faq-question.open::after {
+    transform: rotate(180deg);
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     nav ul {
