@@ -123,6 +123,20 @@ section {
     transform: scale(1.02);
 }
 
+.details {
+    display: none; /* Hide by default */
+    padding: 10px;
+    background-color: #222;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.details.open {
+    display: block; /* Show when .open class is added */
+}
 /* Countdown Section */
 .countdown {
     margin: 50px auto;
