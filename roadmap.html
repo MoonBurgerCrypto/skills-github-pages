@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-    const roadmapButtons = document.querySelectorAll(".roadmap-question");
+    const roadmapButtons = document.querySelectorAll(".clickable"); // Use .clickable instead
 
     roadmapButtons.forEach(button => {
         button.addEventListener("click", function() {
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
             answer.classList.toggle("open"); // Toggle visibility of the answer div
 
             if (arrow) {
-                arrow.classList.toggle("rotate"); // Toggle rotation for arrow (optional)
+                arrow.classList.toggle("rotate"); // Toggle rotation for arrow
             }
         });
     });
