@@ -42,16 +42,17 @@
         </ul>
     </div>
 
-    <div class="clickable" onclick="toggleDetails('roadmap2')">
-        Phase 2 - Presale & Marketing <span class="arrow">▼</span>
-    </div>
-    <div id="roadmap2" class="details">
-        <ul>
-            <li>📢 Launch presale with exclusive rewards for early investors.</li>
-            <li>📢 Initiate large-scale marketing campaigns with influencers.</li>
-            <li>🤝 Secure partnerships with DeFi projects and exchanges.</li>
-        </ul>
-    </div>
+   <div class="clickable">
+    Phase 2 - Presale & Marketing <span class="arrow">▼</span>
+</div>
+<div id="roadmap2" class="details">
+    <ul>
+        <li>📢 Launch presale with exclusive rewards for early investors.</li>
+        <li>📢 Initiate large-scale marketing campaigns with influencers.</li>
+        <li>🤝 Secure partnerships with DeFi projects and exchanges.</li>
+    </ul>
+</div>
+
 
     <div class="clickable" onclick="toggleDetails('roadmap3')">
         Phase 3 - Exchange Listings <span class="arrow">▼</span>
@@ -166,18 +167,21 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-    const roadmapButtons = document.querySelectorAll(".clickable"); // Use .clickable instead
+    const roadmapButtons = document.querySelectorAll(".clickable");
 
     roadmapButtons.forEach(button => {
         button.addEventListener("click", function() {
-            const answer = this.nextElementSibling; // Get the roadmap answer div
-            const arrow = this.querySelector(".arrow"); // Get the arrow inside the question
+            const detailsId = this.nextElementSibling?.id; // Get the ID of the next div
+            if (!detailsId) return; // Prevent errors if no sibling exists
 
-            this.classList.toggle("open"); // Toggle 'open' class for the button
-            answer.classList.toggle("open"); // Toggle visibility of the answer div
+            const answer = document.getElementById(detailsId); // Get the correct details div
+            const arrow = this.querySelector(".arrow"); 
+
+            this.classList.toggle("open"); 
+            answer.classList.toggle("open"); 
 
             if (arrow) {
-                arrow.classList.toggle("rotate"); // Toggle rotation for arrow
+                arrow.classList.toggle("rotate"); 
             }
         });
     });
