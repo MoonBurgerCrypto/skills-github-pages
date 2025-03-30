@@ -154,14 +154,6 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
 }
 
-/* Footer */
-footer {
-    background: #1e1e1e;
-    padding: 15px;
-    font-size: 0.9em;
-    color: #ccc;
-}
-
 .faq {
     margin-top: 50px;
     padding: 20px;
@@ -250,6 +242,13 @@ footer {
 
 .faq-question.open .arrow {
     transform: rotate(180deg);
+}
+/* Footer */
+footer {
+    background: #1e1e1e;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #ccc;
 }
 
 /* Responsive Design */
