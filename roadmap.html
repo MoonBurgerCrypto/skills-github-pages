@@ -164,6 +164,24 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const roadmapButtons = document.querySelectorAll(".roadmap-question");
 
+    roadmapButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const answer = this.nextElementSibling; // Get the roadmap answer div
+            const arrow = this.querySelector(".arrow"); // Get the arrow inside the question
+
+            this.classList.toggle("open"); // Toggle 'open' class for the button
+            answer.classList.toggle("open"); // Toggle visibility of the answer div
+
+            if (arrow) {
+                arrow.classList.toggle("rotate"); // Toggle rotation for arrow (optional)
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>
