@@ -36,7 +36,7 @@
         </div>
     </section>
     
-  <section class="calculator">
+<section class="calculator">
     <h2>📊 Passive Income Calculator</h2>
     <p>Estimate your potential earnings with our calculator.</p>
     <form>
@@ -50,13 +50,31 @@
 
 <script>
     function calculateEarnings(type) {
-        let amount = document.getElementById("amount").value;
-        let percentage = type === "staking" ? 0.20 : 0.05; // 20% for staking, 5% for liquidity
-        let earnings = amount * percentage;
+        let amount = parseFloat(document.getElementById("amount").value);
+        if (isNaN(amount) || amount <= 0) {
+            document.getElementById("earnings-result").innerText = "Please enter a valid amount.";
+            return;
+        }
+
+        let rate = type === "staking" ? 0.20 : 0.05; // 20% for staking, 5% for liquidity providing
+        let weeklyRate = Math.pow(1 + rate / 52, 1) - 1; // Weekly compound interest
+
+        let weeksInMonth = 4; // Approximate number of weeks in a month
+        let weeksInYear = 52; // Number of weeks in a year
+
+        let finalAmountMonth = amount * Math.pow(1 + weeklyRate, weeksInMonth);
+        let finalAmountYear = amount * Math.pow(1 + weeklyRate, weeksInYear);
+
+        let monthlyEarnings = finalAmountMonth - amount;
+        let yearlyEarnings = finalAmountYear - amount;
+
         document.getElementById("earnings-result").innerText = 
-            `Estimated earnings: ${earnings} MBGR per month from ${type}.`;
+            `Estimated earnings: \n
+            🔹 ${monthlyEarnings.toFixed(2)} MBGR per month.\n
+            🔹 ${yearlyEarnings.toFixed(2)} MBGR per year.`;
     }
 </script>
+
 
     
     <footer>
