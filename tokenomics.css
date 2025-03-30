@@ -81,22 +81,42 @@ h1 {
 }
 
 .fee-box {
-    background-color: #222;
-    padding: 15px;
+    background: #1e1e1e;
+    color: #ffcc00;
+    padding: 20px;
     border-radius: 10px;
-    font-weight: bold;
-    width: 140px;
-    text-transform: uppercase;
-    border: 2px solid #ffcc00;
-    transition: all 0.3s ease-in-out;
+    border: 3px solid #ffcc00;
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
 }
 
-.fee-box:hover {
-    background: linear-gradient(135deg, #ff6600, #ffcc00);
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
-    transform: scale(1.05); /* Smoother hover effect */
-    color: #fff;
+.fee-box h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
 }
+
+.fee {
+    background: #222;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+}
+
+.fee h3 {
+    color: #ff6600;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.fee p {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 5px 0;
+}
+
 
 /* Removed unnecessary .fee-box a:hover */
 /* Hero Section */
