@@ -146,37 +146,23 @@
 </section>
 
  <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Hide all roadmap details initially
-            document.querySelectorAll(".details").forEach(details => {
-                details.style.display = "none";
-            });
+document.addEventListener("DOMContentLoaded", function() {
+    const faqButtons = document.querySelectorAll(".faq-question");
 
-            // Toggle Roadmap Sections
-            document.querySelectorAll(".clickable").forEach((item) => {
-                item.addEventListener("click", function () {
-                    const details = this.nextElementSibling;
-                    details.classList.toggle("open");
-                    details.style.display = details.classList.contains("open") ? "block" : "none";
+    faqButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const answer = this.nextElementSibling; // Get the answer div
+            const arrow = this.querySelector(".arrow"); // Get the arrow inside the question
 
-                    // Rotate arrow icon
-                    const arrow = this.querySelector(".arrow");
-                    if (arrow) {
-                        arrow.classList.toggle("rotate");
-                    }
-                });
-            });
+            this.classList.toggle("open"); // Toggle 'open' class for styling
+            answer.classList.toggle("open"); // Toggle visibility using CSS
 
-            // FAQ Toggle Functionality
-            document.querySelectorAll(".faq-question").forEach(button => {
-                button.addEventListener("click", function () {
-                    const answer = this.nextElementSibling;
-                    this.classList.toggle("open"); // Toggle the 'open' class
-                    answer.style.display = answer.classList.contains("open") ? "block" : "none";
-                });
-            });
+            if (arrow) {
+                arrow.classList.toggle("rotate"); // Toggle rotation for arrow
+            }
         });
-    </script>
+    });
+});
 </script>
 
 </body>
